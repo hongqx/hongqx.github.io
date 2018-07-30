@@ -44,34 +44,29 @@ MEI 是一个评估用户对于当前站点的媒体参与程度的指数，它�
 与 video 之间有过交互
 媒体的尺寸不小于 200x140.
 你可以在 Chrome 的地址栏输入:
-### 移动web如何实现自动播放的支持
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```javascript
+chrome://media-engagement
 ```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/hongqx/hongqx.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+如果你是作为开发者，你也可以手动调整这个策略:
+```javascript
+chrome://flags/#autoplay-policy  
+```
+在地址栏输入以上的地址，可以进行手动的策略调整，进行测试。
+### 移动web如何实现自动播放的支持
+在chrome和safari调整期自动播放的策略之前，最最让人悲桑的就是移动端的自动播放过，很多第三方浏览器是直接不允许自动播放的，例如QQ浏览器、百度浏览器，当前还有万恶的UC浏览器，针对这些浏览器，宝宝只能很悲桑的说一声，要么你的公司能强制让这些大爷们给你做可自动播放配置，要么就去挑战提出要自动播放的产品吧放弃吧~~（ps：这个自动播放从用户角度来说确实也是合理的哈）
+    
+以上种种，在移动web端浏览器中实现自动播放希望渺茫，但是在自家app的webview中还是有一线希望的，前提是你要去找native开发哥哥帮你修改个webview的参数啦
+android需要如下修改
+```javascript
+mWebview.getSettings().setMediaPlaybackRequiresUserGesture(false);
+```
+ios需要添加webview的属性设置
+```javascript
+ //media的播放必须要用户行为触发
+_webView.mediaPlaybackRequiresUserAction = NO;
+```
+如果希望自动播放时不要全屏，那么嗨需要设置下面的属性
+```javascript
+ //允许media在行间播放
+_webView.allowsInlineMediaPlayback = YES;
+```
