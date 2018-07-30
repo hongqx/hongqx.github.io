@@ -37,6 +37,13 @@ Chrome 还强调了开发者可以通过 **allow** 属性来控制页面中通�
 *如果是同一个域下的自动播放默认是允许的*
 
 ### 媒体参与指数 (Media Engagement Index)
+MEI 是一个评估用户对于当前站点的媒体参与程度的指数，它取决于下面几个维度:
+
+用户在媒体上停留时间超过了 7秒以上
+音频必须是展示出来，并且没有静音
+与 video 之间有过交互
+媒体的尺寸不小于 200x140.
+你可以在 Chrome 的地址栏输入:
 ### 移动web如何实现自动播放的支持
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
