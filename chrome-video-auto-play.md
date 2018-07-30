@@ -7,15 +7,35 @@
 ![Chrome Autoplay Policy](http://img1.vued.vanthink.cn/vueda728bcacf470e6922f5ba6325af54c81.png)
 如图中所示:
 * 页面中的视频处于静音状态下是允许自动播放的，大概这个产品交互可以参考 微博的主站策略
-
 * 如果用户与当前页面有任何的交互比如点击或者 tap 这样的行为，视频的自动播放将会允许(Safari 最早采用这个策略)
-
 * 在移动端如果页面是被添加到桌面上，自动播放是云讯的。
-
 * 在桌面端我们会根据用户的 媒体参与指数Media Engagement Index, MEI，后文会详细说这个) 来决定这个视频是否自动播放。
 
 如何判断当前媒体是否允许自动播放可以参考下面代码:
+```javascript
+var promise = document.querySelector('video').play();
+
+if (promise !== undefined) {  
+    promise.catch(error => {
+        // Auto-play was prevented
+        // Show a UI element to let the user manually start playback
+    }).then(() => {
+        // Auto-play started
+    });
+}
+```
 ### iframe 下自动播放的调整
+
+Chrome 还强调了开发者可以通过 **allow** 属性来控制页面中通过 iframe 来控制引用页面内的媒体权限。
+```html
+<!-- Autoplay is allowed. -->  
+<iframe src="https://cross-origin.com/myvideo.html" allow="autoplay">
+
+<!-- Autoplay and Fullscreen are allowed. -->  
+<iframe src="https://cross-origin.com/myvideo.html" allow="autoplay; fullscreen">  
+```
+*如果是同一个域下的自动播放默认是允许的*
+
 ### 媒体参与指数 (Media Engagement Index)
 ### 移动web如何实现自动播放的支持
 
