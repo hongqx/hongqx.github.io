@@ -7,15 +7,15 @@ title: Shining Star
 subtitle:  To meet a better self!!
 description:
 keywords:
-author: hongqiongxing
+author: Shining Star
 language:
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://www.honqgx.com
 root: /
-permalink: :year/:title/
+permalink: :category/:title/
 permalink_defaults:
 
 # Directory
@@ -54,7 +54,7 @@ index_generator:
   order_by: -date
   
 # Category & Tag
-default_category: uncategorized
+default_category: doc
 category_map:
 tag_map:
 
@@ -73,7 +73,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: yilia
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

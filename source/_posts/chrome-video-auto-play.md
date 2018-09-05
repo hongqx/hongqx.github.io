@@ -2,6 +2,10 @@
 title: web端video自动播放策略
 date: 2018-07-31 09:12:42
 tags: 
+- videoElement
+- autoplay
+categories:
+- fe
 ---
 最近看 来自 Chrome 团队在 IO 2018上的 分享 [《Build awesome media experiences on the web》](https://www.youtube.com/watch?v=5azRhKsSU_M) 。大概主要是说关于 音视频在 Chrome 上的更新。其中业务团队需要及时关注新的 自动播放策略，虽然在去年9月份 Chrome 团队就更新了博客 [《Autoplay Policy Changes》](https://developers.google.com/web/updates/2017/09/autoplay-policy-changes)。 Chrome 会在 2018年 的第二个季度，采取新的自动播放策略。
 
