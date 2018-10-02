@@ -39,7 +39,7 @@
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
     <div class="left-col" q-class="show:isShow">
       
-<div class="overlay" style="background:#4d4d4d"></div>
+<div class="overlay" style="background: background:#4d4d4d"></div>
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
@@ -83,7 +83,7 @@
 		        
 			</div>
 		</nav>
-	</header>
+	</header>		
 </div>
 
     </div>
@@ -170,8 +170,6 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <!-- Table of Contents -->
-        
         <h1 id="欢迎使用-Cmd-Markdown-编辑阅读器"><a href="#欢迎使用-Cmd-Markdown-编辑阅读器" class="headerlink" title="欢迎使用 Cmd Markdown 编辑阅读器"></a>欢迎使用 Cmd Markdown 编辑阅读器</h1><hr>
 <p>我们理解您需要更便捷更高效的工具记录思想，整理笔记、知识，并将其中承载的价值传播给他人，<strong>Cmd Markdown</strong> 是我们给出的答案 —— 我们为记录思想和分享知识提供更专业的工具。 您可以使用 Cmd Markdown：</p>
 <blockquote>
@@ -333,8 +331,6 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <!-- Table of Contents -->
-        
         
       
 
@@ -419,8 +415,6 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <!-- Table of Contents -->
-        
         <h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> npm install -g hexo</span><br></pre></td></tr></table></figure>
 <h1 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> cd ./Workspaces/hexo/</span><br><span class="line"><span class="meta">$</span> hexo init</span><br></pre></td></tr></table></figure>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> hexo g # 生成静态文件 等同于hexo generate </span><br><span class="line"><span class="meta">$</span> hexo s # 启动服务 等同于hexo server</span><br><span class="line"><span class="meta">$</span> hexo d #完整命令为hexo deploy,将本地编译好的静态文件发布到github上</span><br><span class="line"><span class="meta">$</span> hexo n #完整命令为hexo new,新建一篇文章</span><br><span class="line"><span class="meta">$</span> hexo clean #清除当前项目的静态文件</span><br></pre></td></tr></table></figure>
@@ -513,8 +507,6 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <!-- Table of Contents -->
-        
         
       
 
@@ -588,8 +580,6 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <!-- Table of Contents -->
-        
         <p>function strToObject(str) {<br>    var arr = str.replace(/\s|\xA0/g,””).substr(1,str.length-2).split(‘,’);<br>    var obj = {};<br>    for (var i = 0, _len = arr.length; i &lt; _len; i++) {<br>        var _subArr = arr[i].split(“:”);<br>        var _key = _subArr[0].replace(/\”/g, “”).replace(/\’/g, “”);<br>        var _value = _subArr[1].replace(/\”/g, “”).replace(/\”]’/g, “”);<br>        obj[_key] = _value;<br>    }<br>    console.log(obj);<br>    return obj;<br>}</p>
 
       
@@ -675,8 +665,6 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <!-- Table of Contents -->
-        
         <p>转载自：<a href="https://www.cnblogs.com/taiyonghai/p/6728707.html" target="_blank" rel="noopener">Nginx详细安装部署教程</a></p>
 <h3 id="安装遇到的问题"><a href="#安装遇到的问题" class="headerlink" title="安装遇到的问题"></a>安装遇到的问题</h3><h4 id="重启防火墙的时候遇到了如下问题"><a href="#重启防火墙的时候遇到了如下问题" class="headerlink" title="重启防火墙的时候遇到了如下问题"></a>重启防火墙的时候遇到了如下问题</h4><p>输入如下命令<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//重启防火墙</span><br><span class="line">service iptables restart</span><br></pre></td></tr></table></figure></p>
 <p>输入以上命令的时候，出现了如下报错<strong><em>Failed to restart iptables.service: Unit not found</em></strong>,后来排查了之后找到原因貌似是因为在<strong><em>CentOS 7或RHEL 7或Fedora中防火墙由firewalld来管理</em></strong>,想要采用<code>service iptables restart</code>需要执行如下命令<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">systemctl stop firewalld</span><br><span class="line">systemctl mask firewalld</span><br><span class="line"></span><br><span class="line">//安装iptables-services：</span><br><span class="line">yum install iptables-services</span><br><span class="line"></span><br><span class="line">//设置开机启动</span><br><span class="line">systemctl enable iptables</span><br></pre></td></tr></table></figure></p>
@@ -770,8 +758,6 @@ Job for iptables.service failed because the control process exited with error co
     
     <div class="article-entry" itemprop="articleBody">
       
-        <!-- Table of Contents -->
-        
         <p>最近看 来自 Chrome 团队在 IO 2018上的 分享 <a href="https://www.youtube.com/watch?v=5azRhKsSU_M" target="_blank" rel="noopener">《Build awesome media experiences on the web》</a> 。大概主要是说关于 音视频在 Chrome 上的更新。其中业务团队需要及时关注新的 自动播放策略，虽然在去年9月份 Chrome 团队就更新了博客 <a href="https://developers.google.com/web/updates/2017/09/autoplay-policy-changes" target="_blank" rel="noopener">《Autoplay Policy Changes》</a>。 Chrome 会在 2018年 的第二个季度，采取新的自动播放策略。</p>
 <p>目前该策略在很多场景已经存在，用户初始进入到视频页面的时候，会阻止默认自动播放，如果用户在当前域名下选择了播放，在多次选择之后，就会默认可执行自动播放。目前该策略也对我们线上的一些场景产生了影响，参照之前对safari11以上版本webkit内核根据用户设置阻止视频自动播放的案例的处理，下面是针对chrome上无法自动播放的一些整理，以及在移动web端自动播放支持的情况总结。</p>
 <h3 id="自动播放的策略调整"><a href="#自动播放的策略调整" class="headerlink" title="自动播放的策略调整"></a>自动播放的策略调整</h3><p><img src="http://img1.vued.vanthink.cn/vueda728bcacf470e6922f5ba6325af54c81.png" alt="Chrome Autoplay Policy"><br>如图中所示:</p>
@@ -880,8 +866,6 @@ Job for iptables.service failed because the control process exited with error co
     
     <div class="article-entry" itemprop="articleBody">
       
-        <!-- Table of Contents -->
-        
         
       
 
@@ -1121,6 +1105,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
 
     
   </div>
+
 </div>
 
     <!-- Root element of PhotoSwipe. Must have class pswp. -->
