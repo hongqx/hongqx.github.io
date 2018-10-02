@@ -113,9 +113,16 @@
     <link href="http://www.honqgx.com/fe/webpack-dynamic-loading/"/>
     <id>http://www.honqgx.com/fe/webpack-dynamic-loading/</id>
     <published>2018-08-20T11:30:28.000Z</published>
-    <updated>2018-10-02T09:36:52.393Z</updated>
+    <updated>2018-10-02T10:09:07.007Z</updated>
+    
+    <content type="html"><![CDATA[<p>function strToObject(str) {<br>    var arr = str.replace(/\s|\xA0/g,””).substr(1,str.length-2).split(‘,’);<br>    var obj = {};<br>    for (var i = 0, _len = arr.length; i &lt; _len; i++) {<br>        var _subArr = arr[i].split(“:”);<br>        var _key = _subArr[0].replace(/\”/g, “”).replace(/\’/g, “”);<br>        var _value = _subArr[1].replace(/\”/g, “”).replace(/\”]’/g, “”);<br>        obj[_key] = _value;<br>    }<br>    console.log(obj);<br>    return obj;<br>}</p>]]></content>
     
     <summary type="html">
+    
+      
+      
+        &lt;p&gt;function strToObject(str) {&lt;br&gt;    var arr = str.replace(/\s|\xA0/g,””).substr(1,str.length-2).split(‘,’);&lt;br&gt;    var obj = {};&lt;br&gt;    fo
+      
     
     </summary>
     
