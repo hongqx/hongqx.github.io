@@ -6,15 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://www.honqgx.com">
-  <title>Archives: 2018 | Shining Star</title>
+  <title>Nginx详细安装部署教程 | Shining Star</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Shining Star">
-<meta property="og:url" content="http://www.honqgx.com/archives/2018/index.html">
+  <meta name="description" content="转载自：Nginx详细安装部署教程 安装遇到的问题重启防火墙的时候遇到了如下问题输入如下命令12//重启防火墙service iptables restart 输入以上命令的时候，出现了如下报错Failed to restart iptables.service: Unit not found,后来排查了之后找到原因貌似是因为在CentOS 7或RHEL 7或Fedora中防火墙由firewall">
+<meta name="keywords" content="nginx">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Nginx详细安装部署教程">
+<meta property="og:url" content="http://www.honqgx.com/fe/nginx-install/index.html">
 <meta property="og:site_name" content="Shining Star">
+<meta property="og:description" content="转载自：Nginx详细安装部署教程 安装遇到的问题重启防火墙的时候遇到了如下问题输入如下命令12//重启防火墙service iptables restart 输入以上命令的时候，出现了如下报错Failed to restart iptables.service: Unit not found,后来排查了之后找到原因貌似是因为在CentOS 7或RHEL 7或Fedora中防火墙由firewall">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-08-31T09:31:10.914Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Shining Star">
+<meta name="twitter:title" content="Nginx详细安装部署教程">
+<meta name="twitter:description" content="转载自：Nginx详细安装部署教程 安装遇到的问题重启防火墙的时候遇到了如下问题输入如下命令12//重启防火墙service iptables restart 输入以上命令的时候，出现了如下报错Failed to restart iptables.service: Unit not found,后来排查了之后找到原因貌似是因为在CentOS 7或RHEL 7或Fedora中防火墙由firewall">
   
     <link rel="alternative" href="/atom.xml" title="Shining Star" type="application/atom+xml">
   
@@ -148,301 +153,43 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-nginx-install" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/doc/markdown-demo/" class="archive-article-date">
-  	<time datetime="2018-10-02T03:39:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-02</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/doc/markdown-demo/">markdown-demo</a>
+    <h1 class="article-title" itemprop="name">
+      Nginx详细安装部署教程
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">tag1</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">tag2</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/fe/hls-tag-summarize/" class="archive-article-date">
-  	<time datetime="2018-10-02T03:36:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-02</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/fe/hls-tag-summarize/">hls-tag-summarize</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">hls</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/fe//" class="article-tag-list-link color3">fe</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/doc/demo/" class="archive-article-date">
-  	<time datetime="2018-08-31T07:40:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-31</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/doc/demo/">辨析 Sass 中的 Map 和 List</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">css</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/fe/hexo-command/" class="archive-article-date">
-  	<time datetime="2018-08-31T07:12:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-31</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/fe/hexo-command/">hexo-command</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/fe//" class="article-tag-list-link color3">fe</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/fe/how-to-build-blog-userhexo/" class="archive-article-date">
-  	<time datetime="2018-08-31T07:08:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-31</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/fe/how-to-build-blog-userhexo/">如何使用github和hexo搭建自己的博客</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/fe//" class="article-tag-list-link color3">fe</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/fe/webpack-dynamic-loading/" class="archive-article-date">
-  	<time datetime="2018-08-20T11:30:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-20</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/fe/webpack-dynamic-loading/">webpack动态加载</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">webpack</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/fe//" class="article-tag-list-link color3">fe</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/fe/nginx-install/" class="archive-article-date">
+        
+        <a href="/fe/nginx-install/" class="archive-article-date">
   	<time datetime="2018-07-31T07:49:48.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-31</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/fe/nginx-install/">Nginx详细安装部署教程</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>转载自：<a href="https://www.cnblogs.com/taiyonghai/p/6728707.html" target="_blank" rel="noopener">Nginx详细安装部署教程</a></p>
+<h3 id="安装遇到的问题"><a href="#安装遇到的问题" class="headerlink" title="安装遇到的问题"></a>安装遇到的问题</h3><h4 id="重启防火墙的时候遇到了如下问题"><a href="#重启防火墙的时候遇到了如下问题" class="headerlink" title="重启防火墙的时候遇到了如下问题"></a>重启防火墙的时候遇到了如下问题</h4><p>输入如下命令<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//重启防火墙</span><br><span class="line">service iptables restart</span><br></pre></td></tr></table></figure></p>
+<p>输入以上命令的时候，出现了如下报错<strong><em>Failed to restart iptables.service: Unit not found</em></strong>,后来排查了之后找到原因貌似是因为在<strong><em>CentOS 7或RHEL 7或Fedora中防火墙由firewalld来管理</em></strong>,想要采用<code>service iptables restart</code>需要执行如下命令<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">systemctl stop firewalld</span><br><span class="line">systemctl mask firewalld</span><br><span class="line"></span><br><span class="line">//安装iptables-services：</span><br><span class="line">yum install iptables-services</span><br><span class="line"></span><br><span class="line">//设置开机启动</span><br><span class="line">systemctl enable iptables</span><br></pre></td></tr></table></figure></p>
+<p>后续运行<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">systemctl restart iptables</span><br><span class="line"></span><br><span class="line">//命令有stop|start|restart</span><br><span class="line">//or</span><br><span class="line">//service iptables restart</span><br><span class="line">//命令有stop|start|restart</span><br></pre></td></tr></table></figure></p>
+<p>在进行了以上步骤之后，又出现了新的问题提示<code>Redirecting to /bin/systemctl restart iptables.service
+Job for iptables.service failed because the control process exited with error code.See &quot;systemctl status iptables.service&quot; and &quot;journalctl -xe&quot; for details</code>,解决方案如下：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">//重新运行网络管理装置</span><br><span class="line"></span><br><span class="line">chkconfig network off</span><br><span class="line"></span><br><span class="line">chkconfig network on</span><br><span class="line"></span><br><span class="line">service NetworkManager stop</span><br><span class="line"></span><br><span class="line">service NetworkManager start</span><br></pre></td></tr></table></figure></p>
+<p>这回终于重启成功，在host中配置了</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">47.104.185.99 nginx.test.com</span><br></pre></td></tr></table></figure>
+<p>ping了一下nginx.test.com，链接成功</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ping nginx.test.com</span><br></pre></td></tr></table></figure>
+      
 
-        <div class="article-info info-on-right">
-          
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -454,7 +201,7 @@
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -467,123 +214,62 @@
 	</div>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/fe/chrome-video-auto-play/" class="archive-article-date">
-  	<time datetime="2018-07-31T01:12:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-31</time>
-</a>
+<nav id="article-nav">
+  
+    <a href="/fe/webpack-dynamic-loading/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          webpack动态加载
+        
+      </div>
+    </a>
+  
+  
+    <a href="/fe/chrome-video-auto-play/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">web端video自动播放策略</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/fe/chrome-video-auto-play/">web端video自动播放策略</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">videoElement</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">autoplay</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/fe//" class="article-tag-list-link color3">fe</a>
-        		</li>
-      		
-		</ul>
-	</div>
+        
+        
+    </div>
+</aside>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/fe/design-patterns-singleton/" class="archive-article-date">
-  	<time datetime="2018-07-31T01:09:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-31</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/fe/design-patterns-singleton/">设计模式系列-单例模式</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">design pattern</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">单例</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/fe//" class="article-tag-list-link color3">fe</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
   
-    </div></section>
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -606,8 +292,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
