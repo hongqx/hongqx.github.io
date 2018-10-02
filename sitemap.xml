@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.honqgx.com/doc/markdown-demo/</loc>
+    
+    <lastmod>2018-10-02T08:53:52.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.honqgx.com/fe/how-to-build-blog-userhexo/</loc>
     
     <lastmod>2018-10-02T06:28:48.000Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>http://www.honqgx.com/fe/webpack-dynamic-loading/</loc>
     
     <lastmod>2018-10-02T06:24:17.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.honqgx.com/doc/markdown-demo/</loc>
-    
-    <lastmod>2018-10-02T06:24:11.936Z</lastmod>
     
   </url>
   
