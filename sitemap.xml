@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://www.honqgx.com/fe/webpack-dynamic-loading/</loc>
+    <loc>http://www.honqgx.com/fe/hexo-command/</loc>
     
-    <lastmod>2018-10-02T10:09:07.007Z</lastmod>
+    <lastmod>2018-10-02T10:23:39.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.honqgx.com/doc/jsScript-code-snippets/</loc>
     
-    <lastmod>2018-10-02T09:59:44.000Z</lastmod>
+    <lastmod>2018-10-02T10:16:46.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.honqgx.com/fe/webpack-dynamic-loading/</loc>
+    
+    <lastmod>2018-10-02T10:09:07.007Z</lastmod>
     
   </url>
   
@@ -33,13 +40,6 @@
     <loc>http://www.honqgx.com/doc/hls-tag-summarize/</loc>
     
     <lastmod>2018-10-02T09:35:52.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.honqgx.com/fe/hexo-command/</loc>
-    
-    <lastmod>2018-10-02T09:35:32.000Z</lastmod>
     
   </url>
   
