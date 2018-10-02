@@ -10,6 +10,9 @@
 
     <!--Description-->
     
+        <meta name="description" content="平时开发总会遇到一些通用问题解决的代码片段，每次遇到的时候还总会重复查找，整理个文档持续追加，算是给自己做个备份
+类似json的字符串转换成为对象近期有个前端小白朋友遇到一个问题，后端给吐出了一个长得很像json的字符串，但是不是标准的json,需要自己将其解析，为了解决问题写了如下代码123456">
+    
 
     <!--Author-->
     
@@ -18,7 +21,7 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="Shining Star"/>
+        <meta property="og:title" content="常用js通用逻辑片段汇总"/>
     
 
     <!--Open Graph Description-->
@@ -29,7 +32,7 @@
 
     <!--Type page-->
     
-        <meta property="og:type" content="website" />
+        <meta property="og:type" content="article" />
     
 
     <!--Page Cover-->
@@ -40,7 +43,7 @@
 
     <!-- Title -->
     
-    <title>归档：2018/8 - Shining Star</title>
+    <title>常用js通用逻辑片段汇总 - Shining Star</title>
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
@@ -127,9 +130,7 @@
 <div class="container">
 
     <!-- Main Content -->
-    
-
-<div class="row">
+    <div class="row">
     <div class="col-sm-12">
 
         <!--Title and Logo-->
@@ -137,88 +138,58 @@
     <div class="logo">
         <a href="/"><i class="logo-icon fa fa-cube" aria-hidden="true"></i></a>
         
-            <h1 id="main-title" class="title">2018/8</h1>
-        
     </div>
 </header>
 
-        <section class="main archive-container">
+        <section class="main">
             
-                <div class="archive-post">
-    <a href="/fe/design-patterns-singleton/">
-        <span class="archive-date">
-            Jul 2018
-        </span>
-        设计模式系列-单例模式
-    </a>
+<div class="post">
+
+    <div class="post-header">
+        <h1 class="title">
+            <a href="/doc/jsScript-code-snippets/">
+                常用js通用逻辑片段汇总
+            </a>
+        </h1>
+        <div class="post-info">
+            
+                <span class="date">2018-10-02</span>
+            
+            
+            
+        </div>
+    </div>
+
+    <div class="content">
+
+        <!-- Gallery -->
+        
+
+        <!-- Post Content -->
+        <p>平时开发总会遇到一些通用问题解决的代码片段，每次遇到的时候还总会重复查找，整理个文档持续追加，算是给自己做个备份</p>
+<h3 id="类似json的字符串转换成为对象"><a href="#类似json的字符串转换成为对象" class="headerlink" title="类似json的字符串转换成为对象"></a>类似json的字符串转换成为对象</h3><p>近期有个前端小白朋友遇到一个问题，后端给吐出了一个长得很像json的字符串，但是不是标准的json,需要自己将其解析，为了解决问题写了如下代码<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">strToJsonObject</span>(<span class="params">str</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> arr = str.replace(<span class="regexp">/\s|\xA0/g</span>,<span class="string">""</span>).substr(<span class="number">1</span>,str.length<span class="number">-2</span>).split(<span class="string">','</span>);</span><br><span class="line">    <span class="keyword">var</span> obj = &#123;&#125;;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>, _len = arr.length; i &lt; _len; i++)&#123;</span><br><span class="line">        <span class="keyword">var</span> _subArr = arr[i].split(<span class="string">":"</span>);</span><br><span class="line">        <span class="keyword">var</span> _key = _subArr[<span class="number">0</span>].replace(<span class="regexp">/\"/g</span>, <span class="string">""</span>).replace(<span class="regexp">/\'/g</span>, <span class="string">""</span>);</span><br><span class="line">        <span class="keyword">var</span> _value = _subArr[<span class="number">1</span>].replace(<span class="regexp">/\"/g</span>, <span class="string">""</span>).replace(<span class="regexp">/\'/g</span>, <span class="string">""</span>);</span><br><span class="line">        obj[_key] = _value;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> obj;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> _string = <span class="string">'&#123;"key1":"value1","key2":"value2","key3":"&#123;"key1":"value1"&#125;"&#125;'</span>;</span><br><span class="line"><span class="keyword">var</span> retObj = strToJsonObject(_string);</span><br></pre></td></tr></table></figure></p>
+<p>因为数据结构是单层的，所以以上解析已经满足，但是还需要有优化<br>1、单引号和双引号的替换会把中间的引号也替换掉，而本意是只替换最前一个和最后一个<br>2、没有考虑多层嵌套导致的问题</p>
+
+    </div>
+
+    
+
+    
+        <div class="post-tags">
+            <i class="fa fa-tags" aria-hidden="true"></i>
+            <a href="/tags/jsvascript/">#jsvascript</a>
+        </div>
+    
+
+    <!-- Comments -->
+    
+
 </div>
-            
-                <div class="archive-post">
-    <a href="/fe/chrome-video-auto-play/">
-        <span class="archive-date">
-            Jul 2018
-        </span>
-        web端video自动播放策略
-    </a>
-</div>
-            
-                <div class="archive-post">
-    <a href="/doc/hls-tag-summarize/">
-        <span class="archive-date">
-            Oct 2018
-        </span>
-        hls-tag-summarize
-    </a>
-</div>
-            
-                <div class="archive-post">
-    <a href="/doc/jsScript-code-snippets/">
-        <span class="archive-date">
-            Oct 2018
-        </span>
-        常用js通用逻辑片段汇总
-    </a>
-</div>
-            
-                <div class="archive-post">
-    <a href="/fe/hexo-command/">
-        <span class="archive-date">
-            Aug 2018
-        </span>
-        关于hexo的一些常用命令汇总
-    </a>
-</div>
-            
-                <div class="archive-post">
-    <a href="/fe/webpack-dynamic-loading/">
-        <span class="archive-date">
-            Aug 2018
-        </span>
-        webpack动态加载
-    </a>
-</div>
-            
-                <div class="archive-post">
-    <a href="/fe/nginx-install/">
-        <span class="archive-date">
-            Jul 2018
-        </span>
-        Nginx详细安装部署教程
-    </a>
-</div>
-            
-                <div class="archive-post">
-    <a href="/doc/markdown-demo/">
-        <span class="archive-date">
-            Oct 2018
-        </span>
-        Markdown语法备份
-    </a>
-</div>
-            
         </section>
+
     </div>
 </div>
+
 
 </div>
 
