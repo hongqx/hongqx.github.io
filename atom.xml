@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.honqgx.com/"/>
-  <updated>2018-10-02T10:16:46.000Z</updated>
+  <updated>2018-10-02T10:31:17.000Z</updated>
   <id>http://www.honqgx.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://www.honqgx.com/doc/jsScript-code-snippets/"/>
     <id>http://www.honqgx.com/doc/jsScript-code-snippets/</id>
     <published>2018-10-02T09:37:41.000Z</published>
-    <updated>2018-10-02T10:16:46.000Z</updated>
+    <updated>2018-10-02T10:31:17.000Z</updated>
     
     <content type="html"><![CDATA[<p>平时开发总会遇到一些通用问题解决的代码片段，每次遇到的时候还总会重复查找，整理个文档持续追加，算是给自己做个备份</p><h3 id="类似json的字符串转换成为对象"><a href="#类似json的字符串转换成为对象" class="headerlink" title="类似json的字符串转换成为对象"></a>类似json的字符串转换成为对象</h3><p>近期有个前端小白朋友遇到一个问题，后端给吐出了一个长得很像json的字符串，但是不是标准的json,需要自己将其解析，为了解决问题写了如下代码<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">strToJsonObject</span>(<span class="params">str</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> arr = str.replace(<span class="regexp">/\s|\xA0/g</span>,<span class="string">""</span>).substr(<span class="number">1</span>,str.length<span class="number">-2</span>).split(<span class="string">','</span>);</span><br><span class="line">    <span class="keyword">var</span> obj = &#123;&#125;;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>, _len = arr.length; i &lt; _len; i++)&#123;</span><br><span class="line">        <span class="keyword">var</span> _subArr = arr[i].split(<span class="string">":"</span>);</span><br><span class="line">        <span class="keyword">var</span> _key = _subArr[<span class="number">0</span>].replace(<span class="regexp">/\"/g</span>, <span class="string">""</span>).replace(<span class="regexp">/\'/g</span>, <span class="string">""</span>);</span><br><span class="line">        <span class="keyword">var</span> _value = _subArr[<span class="number">1</span>].replace(<span class="regexp">/\"/g</span>, <span class="string">""</span>).replace(<span class="regexp">/\'/g</span>, <span class="string">""</span>);</span><br><span class="line">        obj[_key] = _value;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> obj;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//test&#123;"key1":"value1</span></span><br><span class="line"><span class="keyword">var</span> _string = <span class="string">'&#123;"key1":"value1","key2":"value2","key3":"&#123;"key1":"value1"&#125;"&#125;'</span>;</span><br><span class="line"><span class="keyword">var</span> retObj = strToJsonObject(_string);</span><br></pre></td></tr></table></figure></p><p>因为数据结构是单层的，所以以上解析已经满足，但是还需要有优化<br>1、单引号和双引号的替换会把中间的引号也替换掉，而本意是只替换最前一个和最后一个<br>2、没有考虑多层嵌套导致的问题</p>]]></content>
     
