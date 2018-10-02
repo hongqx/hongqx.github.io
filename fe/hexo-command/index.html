@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://www.honqgx.com">
   <title>hexo-command | Shining Star</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="安装1$ npm install -g hexo 初始化12$ cd ./Workspaces/hexo/$ hexo init 12345$ hexo g # 生成静态文件 等同于hexo generate $ hexo s # 启动服务 等同于hexo server$ hexo d #完整命令为hexo deploy,将本地编译好的静态文件发布到github上$ hexo n #完整命令为he">
+  <meta name="description" content="关于hexo的一些常用命令汇总 安装1$ npm install -g hexo">
 <meta name="keywords" content="hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo-command">
 <meta property="og:url" content="http://www.honqgx.com/fe/hexo-command/index.html">
 <meta property="og:site_name" content="Shining Star">
-<meta property="og:description" content="安装1$ npm install -g hexo 初始化12$ cd ./Workspaces/hexo/$ hexo init 12345$ hexo g # 生成静态文件 等同于hexo generate $ hexo s # 启动服务 等同于hexo server$ hexo d #完整命令为hexo deploy,将本地编译好的静态文件发布到github上$ hexo n #完整命令为he">
+<meta property="og:description" content="关于hexo的一些常用命令汇总 安装1$ npm install -g hexo">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-10-02T06:23:55.063Z">
+<meta property="og:updated_time" content="2018-10-02T08:59:30.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo-command">
-<meta name="twitter:description" content="安装1$ npm install -g hexo 初始化12$ cd ./Workspaces/hexo/$ hexo init 12345$ hexo g # 生成静态文件 等同于hexo generate $ hexo s # 启动服务 等同于hexo server$ hexo d #完整命令为hexo deploy,将本地编译好的静态文件发布到github上$ hexo n #完整命令为he">
+<meta name="twitter:description" content="关于hexo的一些常用命令汇总 安装1$ npm install -g hexo">
   
     <link rel="alternative" href="/atom.xml" title="Shining Star" type="application/atom+xml">
   
@@ -62,9 +62,7 @@
 			
 				<li><a href="/">主页</a></li>
 	        
-				<li><a href="/essays">随笔</a></li>
-	        
-				<li><a href="/photos">相册</a></li>
+				<li><a href="/tags/随笔">随笔</a></li>
 	        
 			</ul>
 		</nav>
@@ -75,11 +73,7 @@
     			
             
     			
-    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
-    			
             
-    			
-    			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
     			
             
 		</nav>
@@ -120,8 +114,6 @@
 			
 				
 			
-				
-			
 			
 			
 			<nav class="header-nav">
@@ -135,14 +127,12 @@
 			</nav>
 
 			<nav class="header-menu js-header-menu">
-				<ul style="width: 70%">
+				<ul style="width: 50%">
 				
 				
-					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
+					<li style="width: 50%"><a href="/">主页</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a href="/essays">随笔</a></li>
-		        
-					<li style="width: 33.333333333333336%"><a href="/photos">相册</a></li>
+					<li style="width: 50%"><a href="/tags/随笔">随笔</a></li>
 		        
 				</ul>
 			</nav>
@@ -177,7 +167,9 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> npm install -g hexo</span><br></pre></td></tr></table></figure>
+        <p>关于hexo的一些常用命令汇总</p>
+<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> npm install -g hexo</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
 <h1 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> cd ./Workspaces/hexo/</span><br><span class="line"><span class="meta">$</span> hexo init</span><br></pre></td></tr></table></figure>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> hexo g # 生成静态文件 等同于hexo generate </span><br><span class="line"><span class="meta">$</span> hexo s # 启动服务 等同于hexo server</span><br><span class="line"><span class="meta">$</span> hexo d #完整命令为hexo deploy,将本地编译好的静态文件发布到github上</span><br><span class="line"><span class="meta">$</span> hexo n #完整命令为hexo new,新建一篇文章</span><br><span class="line"><span class="meta">$</span> hexo clean #清除当前项目的静态文件</span><br></pre></td></tr></table></figure>
 <h2 id="端口和配置"><a href="#端口和配置" class="headerlink" title="端口和配置"></a>端口和配置</h2><p>hexo启动的时候默认端口号为4000，想要更改启动的端口号如下<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> hexo s -p 5000</span><br></pre></td></tr></table></figure></p>
@@ -357,11 +349,7 @@ MathJax.Hub.Queue(function() {
       
     
       
-      
-      
     
-      
-      
       
     
     
@@ -370,15 +358,11 @@ MathJax.Hub.Queue(function() {
     
     
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      <li style="width: 100%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
       
         
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
-      
         
-      
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
       
         
     </ul>
@@ -399,6 +383,14 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">videoElement</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">autoplay</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">design pattern</a>
               </li>
              
@@ -407,11 +399,7 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">videoElement</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">autoplay</a>
+                <a href="javascript:void(0)" class="js-tag color4">hls</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -427,15 +415,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">hls</a>
+                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">webpack</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
               </li>
             
             <div class="clearfix"></div>
@@ -482,45 +466,7 @@ MathJax.Hub.Queue(function() {
     
 
     
-    	<section class="tools-section tools-section-friends" q-show="friends">
-  		
-        <ul class="search-ul">
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接2</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接3</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接4</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接5</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接6</a>
-            </li>
-          
-        </ul>
-  		
-    	</section>
-    
 
-    
-    	<section class="tools-section tools-section-me" q-show="aboutme">
-  	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
-  	  	
-    	</section>
     
   </div>
   

@@ -57,9 +57,7 @@
 			
 				<li><a href="/">主页</a></li>
 	        
-				<li><a href="/essays">随笔</a></li>
-	        
-				<li><a href="/photos">相册</a></li>
+				<li><a href="/tags/随笔">随笔</a></li>
 	        
 			</ul>
 		</nav>
@@ -70,11 +68,7 @@
     			
             
     			
-    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
-    			
             
-    			
-    			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
     			
             
 		</nav>
@@ -115,8 +109,6 @@
 			
 				
 			
-				
-			
 			
 			
 			<nav class="header-nav">
@@ -130,14 +122,12 @@
 			</nav>
 
 			<nav class="header-menu js-header-menu">
-				<ul style="width: 70%">
+				<ul style="width: 50%">
 				
 				
-					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
+					<li style="width: 50%"><a href="/">主页</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a href="/essays">随笔</a></li>
-		        
-					<li style="width: 33.333333333333336%"><a href="/photos">相册</a></li>
+					<li style="width: 50%"><a href="/tags/随笔">随笔</a></li>
 		        
 				</ul>
 			</nav>
@@ -174,8 +164,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="欢迎使用-Cmd-Markdown-编辑阅读器"><a href="#欢迎使用-Cmd-Markdown-编辑阅读器" class="headerlink" title="欢迎使用 Cmd Markdown 编辑阅读器"></a>欢迎使用 Cmd Markdown 编辑阅读器</h1><hr>
-<p>我们理解您需要更便捷更高效的工具记录思想，整理笔记、知识，并将其中承载的价值传播给他人，<strong>Cmd Markdown</strong> 是我们给出的答案 —— 我们为记录思想和分享知识提供更专业的工具。 您可以使用 Cmd Markdown：</p>
+        <h1 id="Markdown语法备份"><a href="#Markdown语法备份" class="headerlink" title="Markdown语法备份"></a>Markdown语法备份</h1><h2 id=""><a href="#" class="headerlink" title=" "></a><img src="/assets/blogImg/diary-29.jpg" alt="css题目"> </h2><p>比较全面的markdown预发备份，来自作业部落<br>我们理解您需要更便捷更高效的工具记录思想，整理笔记、知识，并将其中承载的价值传播给他人，<strong>Cmd Markdown</strong> 是我们给出的答案 —— 我们为记录思想和分享知识提供更专业的工具。 您可以使用 Cmd Markdown：</p>
 <blockquote>
 <ul>
 <li>整理知识，学习笔记</li>
@@ -184,12 +173,6 @@
 <li>撰写发布学术论文（LaTeX 公式支持）</li>
 </ul>
 </blockquote>
-<p><img src="https://www.zybuluo.com/static/img/logo.png" alt="cmd-markdown-logo"></p>
-<p>除了您现在看到的这个 Cmd Markdown 在线版本，您还可以前往以下网址下载：</p>
-<h3 id="Windows-Mac-Linux-全平台客户端"><a href="#Windows-Mac-Linux-全平台客户端" class="headerlink" title="Windows/Mac/Linux 全平台客户端"></a><a href="https://www.zybuluo.com/cmd/" target="_blank" rel="noopener">Windows/Mac/Linux 全平台客户端</a></h3><blockquote>
-<p>请保留此份 Cmd Markdown 的欢迎稿兼使用说明，如需撰写新稿件，点击顶部工具栏右侧的 <i class="icon-file"></i> <strong>新文稿</strong> 或者使用快捷键 <code>Ctrl+Alt+N</code>。</p>
-</blockquote>
-<hr>
         
           <a class="article-more-a" href="/doc/markdown-demo/#more">more >></a>
         
@@ -353,15 +336,11 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> npm install -g hexo</span><br></pre></td></tr></table></figure>
-<h1 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> cd ./Workspaces/hexo/</span><br><span class="line"><span class="meta">$</span> hexo init</span><br></pre></td></tr></table></figure>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> hexo g # 生成静态文件 等同于hexo generate </span><br><span class="line"><span class="meta">$</span> hexo s # 启动服务 等同于hexo server</span><br><span class="line"><span class="meta">$</span> hexo d #完整命令为hexo deploy,将本地编译好的静态文件发布到github上</span><br><span class="line"><span class="meta">$</span> hexo n #完整命令为hexo new,新建一篇文章</span><br><span class="line"><span class="meta">$</span> hexo clean #清除当前项目的静态文件</span><br></pre></td></tr></table></figure>
-<h2 id="端口和配置"><a href="#端口和配置" class="headerlink" title="端口和配置"></a>端口和配置</h2><p>hexo启动的时候默认端口号为4000，想要更改启动的端口号如下<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> hexo s -p 5000</span><br></pre></td></tr></table></figure></p>
-<p>如果不想每次都更改这个文件这么麻烦的话，可以在hexo的配置文件_config.yml中修改或增加这段代码<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> Server</span><br><span class="line">server:</span><br><span class="line">  port: 4000</span><br><span class="line">  compress: true</span><br><span class="line">  header: true</span><br></pre></td></tr></table></figure></p>
-<h1 id="修改主题"><a href="#修改主题" class="headerlink" title="修改主题"></a>修改主题</h1><h2 id="拷贝主题"><a href="#拷贝主题" class="headerlink" title="拷贝主题"></a>拷贝主题</h2><p>我使用的主题是yilia这个主题, <a href="https://github.com/litten/hexo-theme-yilia.git" target="_blank" rel="noopener">hexo-theme-yilia主题github地址</a>,使用方法将改主题clone到themes之下<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia</span><br><span class="line"><span class="meta">#</span> 拷贝完成切换到主题目录下</span><br><span class="line"><span class="meta">$</span> cd themes </span><br><span class="line"><span class="meta">#</span> 能直接查看theme中多了一个yilia的目录，就是主题配置目录</span><br><span class="line"><span class="meta">$</span> ls -l</span><br></pre></td></tr></table></figure></p>
-<h2 id="启用主题"><a href="#启用主题" class="headerlink" title="启用主题"></a>启用主题</h2><p>回到项目的主目录，会看到有_config.yml这样一个文件，打开该文件，将配置中的theme修改为你先使用的主题名称<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> Extensions</span><br><span class="line"><span class="meta">#</span># Plugins: https://hexo.io/plugins/</span><br><span class="line"><span class="meta">#</span># Themes: https://hexo.io/themes/</span><br><span class="line">theme: yilia</span><br></pre></td></tr></table></figure></p>
-<p>然后重新编译静态文件 启动服务,就能通过<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a>, 在浏览器中看到自己的博客了<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> hexo clean</span><br><span class="line"><span class="meta">$</span> hexo g</span><br><span class="line"><span class="meta">$</span> hexo s</span><br></pre></td></tr></table></figure></p>
-<h1 id="自定义配置说明"><a href="#自定义配置说明" class="headerlink" title="自定义配置说明"></a>自定义配置说明</h1>
+        <p>关于hexo的一些常用命令汇总</p>
+<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> npm install -g hexo</span><br></pre></td></tr></table></figure>
+        
+          <a class="article-more-a" href="/fe/hexo-command/#more">more >></a>
+        
       
 
       
@@ -603,16 +582,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>转载自：<a href="https://www.cnblogs.com/taiyonghai/p/6728707.html" target="_blank" rel="noopener">Nginx详细安装部署教程</a></p>
-<h3 id="安装遇到的问题"><a href="#安装遇到的问题" class="headerlink" title="安装遇到的问题"></a>安装遇到的问题</h3><h4 id="重启防火墙的时候遇到了如下问题"><a href="#重启防火墙的时候遇到了如下问题" class="headerlink" title="重启防火墙的时候遇到了如下问题"></a>重启防火墙的时候遇到了如下问题</h4><p>输入如下命令<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//重启防火墙</span><br><span class="line">service iptables restart</span><br></pre></td></tr></table></figure></p>
-<p>输入以上命令的时候，出现了如下报错<strong><em>Failed to restart iptables.service: Unit not found</em></strong>,后来排查了之后找到原因貌似是因为在<strong><em>CentOS 7或RHEL 7或Fedora中防火墙由firewalld来管理</em></strong>,想要采用<code>service iptables restart</code>需要执行如下命令<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">systemctl stop firewalld</span><br><span class="line">systemctl mask firewalld</span><br><span class="line"></span><br><span class="line">//安装iptables-services：</span><br><span class="line">yum install iptables-services</span><br><span class="line"></span><br><span class="line">//设置开机启动</span><br><span class="line">systemctl enable iptables</span><br></pre></td></tr></table></figure></p>
-<p>后续运行<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">systemctl restart iptables</span><br><span class="line"></span><br><span class="line">//命令有stop|start|restart</span><br><span class="line">//or</span><br><span class="line">//service iptables restart</span><br><span class="line">//命令有stop|start|restart</span><br></pre></td></tr></table></figure></p>
-<p>在进行了以上步骤之后，又出现了新的问题提示<code>Redirecting to /bin/systemctl restart iptables.service
-Job for iptables.service failed because the control process exited with error code.See &quot;systemctl status iptables.service&quot; and &quot;journalctl -xe&quot; for details</code>,解决方案如下：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">//重新运行网络管理装置</span><br><span class="line"></span><br><span class="line">chkconfig network off</span><br><span class="line"></span><br><span class="line">chkconfig network on</span><br><span class="line"></span><br><span class="line">service NetworkManager stop</span><br><span class="line"></span><br><span class="line">service NetworkManager start</span><br></pre></td></tr></table></figure></p>
-<p>这回终于重启成功，在host中配置了</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">47.104.185.99 nginx.test.com</span><br></pre></td></tr></table></figure>
-<p>ping了一下nginx.test.com，链接成功</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ping nginx.test.com</span><br></pre></td></tr></table></figure>
+        <p>转载自：<a href="https://www.cnblogs.com/taiyonghai/p/6728707.html" target="_blank" rel="noopener">Nginx详细安装部署教程</a><br>
+        
+          <a class="article-more-a" href="/fe/nginx-install/#more">more >></a>
+        
       
 
       
@@ -697,26 +670,10 @@ Job for iptables.service failed because the control process exited with error co
     <div class="article-entry" itemprop="articleBody">
       
         <p>最近看 来自 Chrome 团队在 IO 2018上的 分享 <a href="https://www.youtube.com/watch?v=5azRhKsSU_M" target="_blank" rel="noopener">《Build awesome media experiences on the web》</a> 。大概主要是说关于 音视频在 Chrome 上的更新。其中业务团队需要及时关注新的 自动播放策略，虽然在去年9月份 Chrome 团队就更新了博客 <a href="https://developers.google.com/web/updates/2017/09/autoplay-policy-changes" target="_blank" rel="noopener">《Autoplay Policy Changes》</a>。 Chrome 会在 2018年 的第二个季度，采取新的自动播放策略。</p>
-<p>目前该策略在很多场景已经存在，用户初始进入到视频页面的时候，会阻止默认自动播放，如果用户在当前域名下选择了播放，在多次选择之后，就会默认可执行自动播放。目前该策略也对我们线上的一些场景产生了影响，参照之前对safari11以上版本webkit内核根据用户设置阻止视频自动播放的案例的处理，下面是针对chrome上无法自动播放的一些整理，以及在移动web端自动播放支持的情况总结。</p>
-<h3 id="自动播放的策略调整"><a href="#自动播放的策略调整" class="headerlink" title="自动播放的策略调整"></a>自动播放的策略调整</h3><p><img src="http://img1.vued.vanthink.cn/vueda728bcacf470e6922f5ba6325af54c81.png" alt="Chrome Autoplay Policy"><br>如图中所示:</p>
-<ul>
-<li>页面中的视频处于静音状态下是允许自动播放的，大概这个产品交互可以参考 微博的主站策略</li>
-<li>如果用户与当前页面有任何的交互比如点击或者 tap 这样的行为，视频的自动播放将会允许(Safari 最早采用这个策略)</li>
-<li>在移动端如果页面是被添加到桌面上，自动播放是云讯的。</li>
-<li>在桌面端我们会根据用户的 媒体参与指数Media Engagement Index, MEI，后文会详细说这个) 来决定这个视频是否自动播放。</li>
-</ul>
-<p>如何判断当前媒体是否允许自动播放可以参考下面代码:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> promise = <span class="built_in">document</span>.querySelector(<span class="string">'video'</span>).play();</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> (promise !== <span class="literal">undefined</span>) &#123;  </span><br><span class="line">    promise.catch(<span class="function"><span class="params">error</span> =&gt;</span> &#123;</span><br><span class="line">        <span class="comment">// Auto-play was prevented</span></span><br><span class="line">        <span class="comment">// Show a UI element to let the user manually start playback</span></span><br><span class="line">    &#125;).then(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">        <span class="comment">// Auto-play started</span></span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h3 id="iframe-下自动播放的调整"><a href="#iframe-下自动播放的调整" class="headerlink" title="iframe 下自动播放的调整"></a>iframe 下自动播放的调整</h3><p>Chrome 还强调了开发者可以通过 <strong>allow</strong> 属性来控制页面中通过 iframe 来控制引用页面内的媒体权限。<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- Autoplay is allowed. --&gt;</span>  </span><br><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">src</span>=<span class="string">"https://cross-origin.com/myvideo.html"</span> <span class="attr">allow</span>=<span class="string">"autoplay"</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- Autoplay and Fullscreen are allowed. --&gt;</span>  </span><br><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">src</span>=<span class="string">"https://cross-origin.com/myvideo.html"</span> <span class="attr">allow</span>=<span class="string">"autoplay; fullscreen"</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
-<p><em>如果是同一个域下的自动播放默认是允许的</em></p>
-<h3 id="媒体参与指数-Media-Engagement-Index"><a href="#媒体参与指数-Media-Engagement-Index" class="headerlink" title="媒体参与指数 (Media Engagement Index)"></a>媒体参与指数 (Media Engagement Index)</h3><p>MEI 是一个评估用户对于当前站点的媒体参与程度的指数，它取决于下面几个维度:</p>
-<p>用户在媒体上停留时间超过了 7秒以上<br>音频必须是展示出来，并且没有静音<br>与 video 之间有过交互<br>媒体的尺寸不小于 200x140.<br>你可以在 Chrome 的地址栏输入:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chrome:<span class="comment">//media-engagement</span></span><br></pre></td></tr></table></figure></p>
-<p>如果你是作为开发者，你也可以手动调整这个策略:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chrome:<span class="comment">//flags/#autoplay-policy</span></span><br></pre></td></tr></table></figure></p>
-<p>在地址栏输入以上的地址，可以进行手动的策略调整，进行测试。</p>
-<h3 id="移动web如何实现自动播放的支持"><a href="#移动web如何实现自动播放的支持" class="headerlink" title="移动web如何实现自动播放的支持"></a>移动web如何实现自动播放的支持</h3><p>在chrome和safari调整期自动播放的策略之前，最最让人悲桑的就是移动端的自动播放过，很多第三方浏览器是直接不允许自动播放的，例如QQ浏览器、百度浏览器，当前还有万恶的UC浏览器，针对这些浏览器，宝宝只能很悲桑的说一声，要么你的公司能强制让这些大爷们给你做可自动播放配置，要么就去挑战提出要自动播放的产品吧放弃吧~~（ps：这个自动播放从用户角度来说确实也是合理的哈）</p>
-<p>以上种种，在移动web端浏览器中实现自动播放希望渺茫，但是在自家app的webview中还是有一线希望的，前提是你要去找native开发哥哥帮你修改个webview的参数啦<br>android需要如下修改<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mWebview.getSettings().setMediaPlaybackRequiresUserGesture(<span class="literal">false</span>);</span><br></pre></td></tr></table></figure></p>
-<p>ios需要添加webview的属性设置<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"> <span class="comment">//media的播放必须要用户行为触发</span></span><br><span class="line">_webView.mediaPlaybackRequiresUserAction = NO;</span><br></pre></td></tr></table></figure></p>
-<p>如果希望自动播放时不要全屏，那么嗨需要设置下面的属性<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"> <span class="comment">//允许media在行间播放</span></span><br><span class="line">_webView.allowsInlineMediaPlayback = YES;</span><br></pre></td></tr></table></figure></p>
-
+<p>目前该策略在很多场景已经存在，用户初始进入到视频页面的时候，会阻止默认自动播放，如果用户在当前域名下选择了播放，在多次选择之后，就会默认可执行自动播放。目前该策略也对我们线上的一些场景产生了影响，参照之前对safari11以上版本webkit内核根据用户设置阻止视频自动播放的案例的处理，下面是针对chrome上无法自动播放的一些整理，以及在移动web端自动播放支持的情况总结。<br>
+        
+          <a class="article-more-a" href="/fe/chrome-video-auto-play/#more">more >></a>
+        
       
 
       
@@ -944,11 +901,7 @@ MathJax.Hub.Queue(function() {
       
     
       
-      
-      
     
-      
-      
       
     
     
@@ -957,15 +910,11 @@ MathJax.Hub.Queue(function() {
     
     
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      <li style="width: 100%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
       
         
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
-      
         
-      
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
       
         
     </ul>
@@ -986,6 +935,14 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">videoElement</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">autoplay</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">design pattern</a>
               </li>
              
@@ -994,11 +951,7 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">videoElement</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">autoplay</a>
+                <a href="javascript:void(0)" class="js-tag color4">hls</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1014,15 +967,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">hls</a>
+                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">webpack</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
               </li>
             
             <div class="clearfix"></div>
@@ -1069,45 +1018,7 @@ MathJax.Hub.Queue(function() {
     
 
     
-    	<section class="tools-section tools-section-friends" q-show="friends">
-  		
-        <ul class="search-ul">
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接2</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接3</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接4</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接5</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接6</a>
-            </li>
-          
-        </ul>
-  		
-    	</section>
-    
 
-    
-    	<section class="tools-section tools-section-me" q-show="aboutme">
-  	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
-  	  	
-    	</section>
     
   </div>
   
