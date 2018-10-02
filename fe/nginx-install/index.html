@@ -15,7 +15,7 @@
 <meta property="og:url" content="http://www.honqgx.com/fe/nginx-install/index.html">
 <meta property="og:site_name" content="Shining Star">
 <meta property="og:description" content="转载自：Nginx详细安装部署教程 安装遇到的问题重启防火墙的时候遇到了如下问题输入如下命令12//重启防火墙service iptables restart 输入以上命令的时候，出现了如下报错Failed to restart iptables.service: Unit not found,后来排查了之后找到原因貌似是因为在CentOS 7或RHEL 7或Fedora中防火墙由firewall">
-<meta property="og:locale" content="default">
+<meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2018-08-31T09:31:10.914Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Nginx详细安装部署教程">
@@ -173,6 +173,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
+        <!-- Table of Contents -->
+        
         <p>转载自：<a href="https://www.cnblogs.com/taiyonghai/p/6728707.html" target="_blank" rel="noopener">Nginx详细安装部署教程</a></p>
 <h3 id="安装遇到的问题"><a href="#安装遇到的问题" class="headerlink" title="安装遇到的问题"></a>安装遇到的问题</h3><h4 id="重启防火墙的时候遇到了如下问题"><a href="#重启防火墙的时候遇到了如下问题" class="headerlink" title="重启防火墙的时候遇到了如下问题"></a>重启防火墙的时候遇到了如下问题</h4><p>输入如下命令<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//重启防火墙</span><br><span class="line">service iptables restart</span><br></pre></td></tr></table></figure></p>
 <p>输入以上命令的时候，出现了如下报错<strong><em>Failed to restart iptables.service: Unit not found</em></strong>,后来排查了之后找到原因貌似是因为在<strong><em>CentOS 7或RHEL 7或Fedora中防火墙由firewalld来管理</em></strong>,想要采用<code>service iptables restart</code>需要执行如下命令<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">systemctl stop firewalld</span><br><span class="line">systemctl mask firewalld</span><br><span class="line"></span><br><span class="line">//安装iptables-services：</span><br><span class="line">yum install iptables-services</span><br><span class="line"></span><br><span class="line">//设置开机启动</span><br><span class="line">systemctl enable iptables</span><br></pre></td></tr></table></figure></p>
@@ -262,7 +264,7 @@ Job for iptables.service failed because the control process exited with error co
 
 
   
-  
+
   
 
   
@@ -362,10 +364,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
             
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">hls</a>
-              </li>
-            
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">css</a>
               </li>
             
@@ -378,11 +376,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
             
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">hls</a>
+              </li>
+            
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
             
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">webpack</a>
+              </li>
+            
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
               </li>
             
               <li class="article-tag-list-item">
@@ -393,15 +399,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
                 <a href="javascript:void(0)" class="js-tag color5">tag2</a>
               </li>
             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
-              </li>
-            
             <div class="clearfix"></div>
           </ul>
         </div>
         <ul class="search-ul">
-          <!--<p q-show="jsonFail" style="padding: 20px; font-size: 12px;">
+          <p q-show="jsonFail" style="padding: 20px; font-size: 12px;">
             缺失模块。<br/>1、请确保node版本大于6.2<br/>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br/> npm i hexo-generator-json-content --save<br/><br/>
             3、在根目录_config.yml里添加配置：
 <pre style="font-size: 12px;" q-show="jsonFail">
@@ -424,13 +426,9 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
       categories: false
       tags: true
 </pre>
-          </p>-->
-          
+          </p>
           <li class="search-li" q-repeat="items" q-show="isShow">
-            <a q-attr="href:path|urlformat" class="search-title" href="/fe/design-patterns-singleton/">
-              <i class="icon-quo-left icon"></i>
-              <span q-text="title">设计模式系列-单例模式</span>
-            </a>
+            <a q-attr="href:path|urlformat" class="search-title"><i class="icon-quo-left icon"></i><span q-text="title"></span></a>
             <p class="search-time">
               <i class="icon-calendar icon"></i>
               <span q-text="date|dateformat"></span>
@@ -440,127 +438,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               <span q-repeat="tags" q-on="click:choseTag(e, name)" q-text="name|tagformat"></span>
             </p>
           </li>
-          
-          <li class="search-li" q-repeat="items" q-show="isShow">
-            <a q-attr="href:path|urlformat" class="search-title" href="/fe/hls-tag-summarize/">
-              <i class="icon-quo-left icon"></i>
-              <span q-text="title">hls-tag-summarize</span>
-            </a>
-            <p class="search-time">
-              <i class="icon-calendar icon"></i>
-              <span q-text="date|dateformat"></span>
-            </p>
-            <p class="search-tag">
-              <i class="icon-price-tags icon"></i>
-              <span q-repeat="tags" q-on="click:choseTag(e, name)" q-text="name|tagformat"></span>
-            </p>
-          </li>
-          
-          <li class="search-li" q-repeat="items" q-show="isShow">
-            <a q-attr="href:path|urlformat" class="search-title" href="/doc/demo/">
-              <i class="icon-quo-left icon"></i>
-              <span q-text="title">辨析 Sass 中的 Map 和 List</span>
-            </a>
-            <p class="search-time">
-              <i class="icon-calendar icon"></i>
-              <span q-text="date|dateformat"></span>
-            </p>
-            <p class="search-tag">
-              <i class="icon-price-tags icon"></i>
-              <span q-repeat="tags" q-on="click:choseTag(e, name)" q-text="name|tagformat"></span>
-            </p>
-          </li>
-          
-          <li class="search-li" q-repeat="items" q-show="isShow">
-            <a q-attr="href:path|urlformat" class="search-title" href="/fe/chrome-video-auto-play/">
-              <i class="icon-quo-left icon"></i>
-              <span q-text="title">web端video自动播放策略</span>
-            </a>
-            <p class="search-time">
-              <i class="icon-calendar icon"></i>
-              <span q-text="date|dateformat"></span>
-            </p>
-            <p class="search-tag">
-              <i class="icon-price-tags icon"></i>
-              <span q-repeat="tags" q-on="click:choseTag(e, name)" q-text="name|tagformat"></span>
-            </p>
-          </li>
-          
-          <li class="search-li" q-repeat="items" q-show="isShow">
-            <a q-attr="href:path|urlformat" class="search-title" href="/fe/how-to-build-blog-userhexo/">
-              <i class="icon-quo-left icon"></i>
-              <span q-text="title">如何使用github和hexo搭建自己的博客</span>
-            </a>
-            <p class="search-time">
-              <i class="icon-calendar icon"></i>
-              <span q-text="date|dateformat"></span>
-            </p>
-            <p class="search-tag">
-              <i class="icon-price-tags icon"></i>
-              <span q-repeat="tags" q-on="click:choseTag(e, name)" q-text="name|tagformat"></span>
-            </p>
-          </li>
-          
-          <li class="search-li" q-repeat="items" q-show="isShow">
-            <a q-attr="href:path|urlformat" class="search-title" href="/fe/hexo-command/">
-              <i class="icon-quo-left icon"></i>
-              <span q-text="title">hexo-command</span>
-            </a>
-            <p class="search-time">
-              <i class="icon-calendar icon"></i>
-              <span q-text="date|dateformat"></span>
-            </p>
-            <p class="search-tag">
-              <i class="icon-price-tags icon"></i>
-              <span q-repeat="tags" q-on="click:choseTag(e, name)" q-text="name|tagformat"></span>
-            </p>
-          </li>
-          
-          <li class="search-li" q-repeat="items" q-show="isShow">
-            <a q-attr="href:path|urlformat" class="search-title" href="/fe/webpack-dynamic-loading/">
-              <i class="icon-quo-left icon"></i>
-              <span q-text="title">webpack动态加载</span>
-            </a>
-            <p class="search-time">
-              <i class="icon-calendar icon"></i>
-              <span q-text="date|dateformat"></span>
-            </p>
-            <p class="search-tag">
-              <i class="icon-price-tags icon"></i>
-              <span q-repeat="tags" q-on="click:choseTag(e, name)" q-text="name|tagformat"></span>
-            </p>
-          </li>
-          
-          <li class="search-li" q-repeat="items" q-show="isShow">
-            <a q-attr="href:path|urlformat" class="search-title" href="/doc/markdown-demo/">
-              <i class="icon-quo-left icon"></i>
-              <span q-text="title">markdown-demo</span>
-            </a>
-            <p class="search-time">
-              <i class="icon-calendar icon"></i>
-              <span q-text="date|dateformat"></span>
-            </p>
-            <p class="search-tag">
-              <i class="icon-price-tags icon"></i>
-              <span q-repeat="tags" q-on="click:choseTag(e, name)" q-text="name|tagformat"></span>
-            </p>
-          </li>
-          
-          <li class="search-li" q-repeat="items" q-show="isShow">
-            <a q-attr="href:path|urlformat" class="search-title" href="/fe/nginx-install/">
-              <i class="icon-quo-left icon"></i>
-              <span q-text="title">Nginx详细安装部署教程</span>
-            </a>
-            <p class="search-time">
-              <i class="icon-calendar icon"></i>
-              <span q-text="date|dateformat"></span>
-            </p>
-            <p class="search-tag">
-              <i class="icon-price-tags icon"></i>
-              <span q-repeat="tags" q-on="click:choseTag(e, name)" q-text="name|tagformat"></span>
-            </p>
-          </li>
-          
         </ul>
     	</section>
     
@@ -569,7 +446,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
 
     
   </div>
-
 </div>
 
     <!-- Root element of PhotoSwipe. Must have class pswp. -->

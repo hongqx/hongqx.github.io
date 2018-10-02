@@ -15,8 +15,8 @@
 <meta property="og:url" content="http://www.honqgx.com/fe/webpack-dynamic-loading/index.html">
 <meta property="og:site_name" content="Shining Star">
 <meta property="og:description" content="function strToObject(str) {    var arr = str.replace(/\s|\xA0/g,””).substr(1,str.length-2).split(‘,’);    var obj = {};    for (var i = 0, _len = arr.length; i &amp;lt; _len; i++) {        var _subArr = a">
-<meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-08-31T09:31:03.000Z">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-10-02T06:24:17.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="webpack动态加载">
 <meta name="twitter:description" content="function strToObject(str) {    var arr = str.replace(/\s|\xA0/g,””).substr(1,str.length-2).split(‘,’);    var obj = {};    for (var i = 0, _len = arr.length; i &amp;lt; _len; i++) {        var _subArr = a">
@@ -173,6 +173,13 @@
     
     <div class="article-entry" itemprop="articleBody">
       
+        <!-- Table of Contents -->
+        
+        <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
+        
+        </div>
+        
         <p>function strToObject(str) {<br>    var arr = str.replace(/\s|\xA0/g,””).substr(1,str.length-2).split(‘,’);<br>    var obj = {};<br>    for (var i = 0, _len = arr.length; i &lt; _len; i++) {<br>        var _subArr = arr[i].split(“:”);<br>        var _key = _subArr[0].replace(/\”/g, “”).replace(/\’/g, “”);<br>        var _value = _subArr[1].replace(/\”/g, “”).replace(/\”]’/g, “”);<br>        obj[_key] = _value;<br>    }<br>    console.log(obj);<br>    return obj;<br>}</p>
 
       
@@ -248,13 +255,26 @@
         </div>
         
         
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    目录，不存在的…
+                    </div>
+                </span>
+            </div>
+        </div>
+        
     </div>
 </aside>
 
 
 
   
-  
+
   
 
   
@@ -354,10 +374,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
             
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">hls</a>
-              </li>
-            
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">css</a>
               </li>
             
@@ -370,11 +386,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
             
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">hls</a>
+              </li>
+            
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
             
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">webpack</a>
+              </li>
+            
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
               </li>
             
               <li class="article-tag-list-item">
@@ -385,15 +409,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
                 <a href="javascript:void(0)" class="js-tag color5">tag2</a>
               </li>
             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
-              </li>
-            
             <div class="clearfix"></div>
           </ul>
         </div>
         <ul class="search-ul">
-          <!--<p q-show="jsonFail" style="padding: 20px; font-size: 12px;">
+          <p q-show="jsonFail" style="padding: 20px; font-size: 12px;">
             缺失模块。<br/>1、请确保node版本大于6.2<br/>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br/> npm i hexo-generator-json-content --save<br/><br/>
             3、在根目录_config.yml里添加配置：
 <pre style="font-size: 12px;" q-show="jsonFail">
@@ -416,13 +436,9 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
       categories: false
       tags: true
 </pre>
-          </p>-->
-          
+          </p>
           <li class="search-li" q-repeat="items" q-show="isShow">
-            <a q-attr="href:path|urlformat" class="search-title" href="/fe/design-patterns-singleton/">
-              <i class="icon-quo-left icon"></i>
-              <span q-text="title">设计模式系列-单例模式</span>
-            </a>
+            <a q-attr="href:path|urlformat" class="search-title"><i class="icon-quo-left icon"></i><span q-text="title"></span></a>
             <p class="search-time">
               <i class="icon-calendar icon"></i>
               <span q-text="date|dateformat"></span>
@@ -432,127 +448,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               <span q-repeat="tags" q-on="click:choseTag(e, name)" q-text="name|tagformat"></span>
             </p>
           </li>
-          
-          <li class="search-li" q-repeat="items" q-show="isShow">
-            <a q-attr="href:path|urlformat" class="search-title" href="/fe/hls-tag-summarize/">
-              <i class="icon-quo-left icon"></i>
-              <span q-text="title">hls-tag-summarize</span>
-            </a>
-            <p class="search-time">
-              <i class="icon-calendar icon"></i>
-              <span q-text="date|dateformat"></span>
-            </p>
-            <p class="search-tag">
-              <i class="icon-price-tags icon"></i>
-              <span q-repeat="tags" q-on="click:choseTag(e, name)" q-text="name|tagformat"></span>
-            </p>
-          </li>
-          
-          <li class="search-li" q-repeat="items" q-show="isShow">
-            <a q-attr="href:path|urlformat" class="search-title" href="/doc/demo/">
-              <i class="icon-quo-left icon"></i>
-              <span q-text="title">辨析 Sass 中的 Map 和 List</span>
-            </a>
-            <p class="search-time">
-              <i class="icon-calendar icon"></i>
-              <span q-text="date|dateformat"></span>
-            </p>
-            <p class="search-tag">
-              <i class="icon-price-tags icon"></i>
-              <span q-repeat="tags" q-on="click:choseTag(e, name)" q-text="name|tagformat"></span>
-            </p>
-          </li>
-          
-          <li class="search-li" q-repeat="items" q-show="isShow">
-            <a q-attr="href:path|urlformat" class="search-title" href="/fe/chrome-video-auto-play/">
-              <i class="icon-quo-left icon"></i>
-              <span q-text="title">web端video自动播放策略</span>
-            </a>
-            <p class="search-time">
-              <i class="icon-calendar icon"></i>
-              <span q-text="date|dateformat"></span>
-            </p>
-            <p class="search-tag">
-              <i class="icon-price-tags icon"></i>
-              <span q-repeat="tags" q-on="click:choseTag(e, name)" q-text="name|tagformat"></span>
-            </p>
-          </li>
-          
-          <li class="search-li" q-repeat="items" q-show="isShow">
-            <a q-attr="href:path|urlformat" class="search-title" href="/fe/how-to-build-blog-userhexo/">
-              <i class="icon-quo-left icon"></i>
-              <span q-text="title">如何使用github和hexo搭建自己的博客</span>
-            </a>
-            <p class="search-time">
-              <i class="icon-calendar icon"></i>
-              <span q-text="date|dateformat"></span>
-            </p>
-            <p class="search-tag">
-              <i class="icon-price-tags icon"></i>
-              <span q-repeat="tags" q-on="click:choseTag(e, name)" q-text="name|tagformat"></span>
-            </p>
-          </li>
-          
-          <li class="search-li" q-repeat="items" q-show="isShow">
-            <a q-attr="href:path|urlformat" class="search-title" href="/fe/hexo-command/">
-              <i class="icon-quo-left icon"></i>
-              <span q-text="title">hexo-command</span>
-            </a>
-            <p class="search-time">
-              <i class="icon-calendar icon"></i>
-              <span q-text="date|dateformat"></span>
-            </p>
-            <p class="search-tag">
-              <i class="icon-price-tags icon"></i>
-              <span q-repeat="tags" q-on="click:choseTag(e, name)" q-text="name|tagformat"></span>
-            </p>
-          </li>
-          
-          <li class="search-li" q-repeat="items" q-show="isShow">
-            <a q-attr="href:path|urlformat" class="search-title" href="/fe/webpack-dynamic-loading/">
-              <i class="icon-quo-left icon"></i>
-              <span q-text="title">webpack动态加载</span>
-            </a>
-            <p class="search-time">
-              <i class="icon-calendar icon"></i>
-              <span q-text="date|dateformat"></span>
-            </p>
-            <p class="search-tag">
-              <i class="icon-price-tags icon"></i>
-              <span q-repeat="tags" q-on="click:choseTag(e, name)" q-text="name|tagformat"></span>
-            </p>
-          </li>
-          
-          <li class="search-li" q-repeat="items" q-show="isShow">
-            <a q-attr="href:path|urlformat" class="search-title" href="/doc/markdown-demo/">
-              <i class="icon-quo-left icon"></i>
-              <span q-text="title">markdown-demo</span>
-            </a>
-            <p class="search-time">
-              <i class="icon-calendar icon"></i>
-              <span q-text="date|dateformat"></span>
-            </p>
-            <p class="search-tag">
-              <i class="icon-price-tags icon"></i>
-              <span q-repeat="tags" q-on="click:choseTag(e, name)" q-text="name|tagformat"></span>
-            </p>
-          </li>
-          
-          <li class="search-li" q-repeat="items" q-show="isShow">
-            <a q-attr="href:path|urlformat" class="search-title" href="/fe/nginx-install/">
-              <i class="icon-quo-left icon"></i>
-              <span q-text="title">Nginx详细安装部署教程</span>
-            </a>
-            <p class="search-time">
-              <i class="icon-calendar icon"></i>
-              <span q-text="date|dateformat"></span>
-            </p>
-            <p class="search-tag">
-              <i class="icon-price-tags icon"></i>
-              <span q-repeat="tags" q-on="click:choseTag(e, name)" q-text="name|tagformat"></span>
-            </p>
-          </li>
-          
         </ul>
     	</section>
     
@@ -561,7 +456,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
 
     
   </div>
-
 </div>
 
     <!-- Root element of PhotoSwipe. Must have class pswp. -->
