@@ -6,4 +6,5 @@ tags:
 - 单例
 categories:
 - fe
+toc: true
 ---

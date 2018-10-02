@@ -7,6 +7,7 @@ categories:
 - fe
 ---
 转载自：[Nginx详细安装部署教程](https://www.cnblogs.com/taiyonghai/p/6728707.html)
+<!-- more -->
 ### 安装遇到的问题
 #### 重启防火墙的时候遇到了如下问题
 输入如下命令

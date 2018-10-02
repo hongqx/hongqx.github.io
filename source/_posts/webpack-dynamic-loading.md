@@ -5,6 +5,7 @@ tags:
 - webpack
 categories: 
 - fe
+toc: true
 ---
 function strToObject(str) {
     var arr = str.replace(/\s|\xA0/g,"").substr(1,str.length-2).split(',');
