@@ -2,72 +2,72 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://www.honqgx.com/doc/jsScript-code-snippets/</loc>
+    <loc>http://hongqx.github.io/fe/hls-tag-summarize/</loc>
     
-    <lastmod>2018-10-02T10:31:17.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.honqgx.com/fe/hexo-command/</loc>
-    
-    <lastmod>2018-10-02T10:29:52.951Z</lastmod>
+    <lastmod>2018-10-03T03:54:19.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.honqgx.com/fe/webpack-dynamic-loading/</loc>
+    <loc>http://hongqx.github.io/tools/markdown-demo/</loc>
     
-    <lastmod>2018-10-02T10:09:07.007Z</lastmod>
+    <lastmod>2018-10-03T03:54:15.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.honqgx.com/fe/nginx-install/</loc>
+    <loc>http://hongqx.github.io/fe/webpack-dynamic-loading/</loc>
+    
+    <lastmod>2018-10-03T03:53:47.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://hongqx.github.io/fe/jsScript-code-snippets/</loc>
+    
+    <lastmod>2018-10-03T03:53:10.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://hongqx.github.io/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/design-patterns-singleton/</loc>
+    
+    <lastmod>2018-10-03T03:52:48.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://hongqx.github.io/fe/chrome-video-auto-play/</loc>
+    
+    <lastmod>2018-10-03T03:52:32.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://hongqx.github.io/fe/hexo-command/</loc>
+    
+    <lastmod>2018-10-03T03:51:03.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://hongqx.github.io/fe/nginx-install/</loc>
     
     <lastmod>2018-10-02T09:36:41.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.honqgx.com/fe/design-patterns-singleton/</loc>
-    
-    <lastmod>2018-10-02T09:36:30.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.honqgx.com/doc/hls-tag-summarize/</loc>
-    
-    <lastmod>2018-10-02T09:35:52.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.honqgx.com/doc/markdown-demo/</loc>
-    
-    <lastmod>2018-10-02T09:33:08.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.honqgx.com/photos/ins.json</loc>
+    <loc>http://hongqx.github.io/photos/ins.json</loc>
     
     <lastmod>2018-10-02T09:10:09.472Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.honqgx.com/photos/index.html</loc>
+    <loc>http://hongqx.github.io/photos/index.html</loc>
     
     <lastmod>2018-10-02T09:10:09.469Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.honqgx.com/fe/chrome-video-auto-play/</loc>
-    
-    <lastmod>2018-10-02T09:00:05.000Z</lastmod>
     
   </url>
   

@@ -5,21 +5,21 @@
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <link rel="dns-prefetch" href="http://www.honqgx.com">
+  <link rel="dns-prefetch" href="http://hongqx.github.io">
   <title>常用js通用逻辑片段汇总 | Shining Star</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="平时开发总会遇到一些通用问题解决的代码片段，每次遇到的时候还总会重复查找，整理个文档持续追加，算是给自己做个备份 类似json的字符串转换成为对象近期有个前端小白朋友遇到一个问题，后端给吐出了一个长得很像json的字符串，但是不是标准的json,需要自己将其解析，为了解决问题写了如下代码1234567891011121314function strToJsonObject(str) &amp;#123;">
+  <meta name="description" content="平时开发总会遇到一些通用问题解决的代码片段，每次遇到的时候还总会重复查找，整理个文档持续追加，算是给自己做个备份">
 <meta name="keywords" content="jsvascript">
 <meta property="og:type" content="article">
 <meta property="og:title" content="常用js通用逻辑片段汇总">
-<meta property="og:url" content="http://www.honqgx.com/doc/jsScript-code-snippets/index.html">
+<meta property="og:url" content="http://hongqx.github.io/fe/jsScript-code-snippets/index.html">
 <meta property="og:site_name" content="Shining Star">
-<meta property="og:description" content="平时开发总会遇到一些通用问题解决的代码片段，每次遇到的时候还总会重复查找，整理个文档持续追加，算是给自己做个备份 类似json的字符串转换成为对象近期有个前端小白朋友遇到一个问题，后端给吐出了一个长得很像json的字符串，但是不是标准的json,需要自己将其解析，为了解决问题写了如下代码1234567891011121314function strToJsonObject(str) &amp;#123;">
+<meta property="og:description" content="平时开发总会遇到一些通用问题解决的代码片段，每次遇到的时候还总会重复查找，整理个文档持续追加，算是给自己做个备份">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-10-02T10:31:17.000Z">
+<meta property="og:updated_time" content="2018-10-03T03:53:10.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="常用js通用逻辑片段汇总">
-<meta name="twitter:description" content="平时开发总会遇到一些通用问题解决的代码片段，每次遇到的时候还总会重复查找，整理个文档持续追加，算是给自己做个备份 类似json的字符串转换成为对象近期有个前端小白朋友遇到一个问题，后端给吐出了一个长得很像json的字符串，但是不是标准的json,需要自己将其解析，为了解决问题写了如下代码1234567891011121314function strToJsonObject(str) &amp;#123;">
+<meta name="twitter:description" content="平时开发总会遇到一些通用问题解决的代码片段，每次遇到的时候还总会重复查找，整理个文档持续追加，算是给自己做个备份">
   
     <link rel="alternative" href="/atom.xml" title="Shining Star" type="application/atom+xml">
   
@@ -159,7 +159,7 @@
   
 
         
-        <a href="/doc/jsScript-code-snippets/" class="archive-article-date">
+        <a href="/fe/jsScript-code-snippets/" class="archive-article-date">
   	<time datetime="2018-10-02T09:37:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-02</time>
 </a>
         
@@ -167,7 +167,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>平时开发总会遇到一些通用问题解决的代码片段，每次遇到的时候还总会重复查找，整理个文档持续追加，算是给自己做个备份</p>
+        <p>平时开发总会遇到一些通用问题解决的代码片段，每次遇到的时候还总会重复查找，整理个文档持续追加，算是给自己做个备份<br><a id="more"></a></p>
 <h3 id="类似json的字符串转换成为对象"><a href="#类似json的字符串转换成为对象" class="headerlink" title="类似json的字符串转换成为对象"></a>类似json的字符串转换成为对象</h3><p>近期有个前端小白朋友遇到一个问题，后端给吐出了一个长得很像json的字符串，但是不是标准的json,需要自己将其解析，为了解决问题写了如下代码<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">strToJsonObject</span>(<span class="params">str</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> arr = str.replace(<span class="regexp">/\s|\xA0/g</span>,<span class="string">""</span>).substr(<span class="number">1</span>,str.length<span class="number">-2</span>).split(<span class="string">','</span>);</span><br><span class="line">    <span class="keyword">var</span> obj = &#123;&#125;;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>, _len = arr.length; i &lt; _len; i++)&#123;</span><br><span class="line">        <span class="keyword">var</span> _subArr = arr[i].split(<span class="string">":"</span>);</span><br><span class="line">        <span class="keyword">var</span> _key = _subArr[<span class="number">0</span>].replace(<span class="regexp">/\"/g</span>, <span class="string">""</span>).replace(<span class="regexp">/\'/g</span>, <span class="string">""</span>);</span><br><span class="line">        <span class="keyword">var</span> _value = _subArr[<span class="number">1</span>].replace(<span class="regexp">/\"/g</span>, <span class="string">""</span>).replace(<span class="regexp">/\'/g</span>, <span class="string">""</span>);</span><br><span class="line">        obj[_key] = _value;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> obj;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//test&#123;"key1":"value1</span></span><br><span class="line"><span class="keyword">var</span> _string = <span class="string">'&#123;"key1":"value1","key2":"value2","key3":"&#123;"key1":"value1"&#125;"&#125;'</span>;</span><br><span class="line"><span class="keyword">var</span> retObj = strToJsonObject(_string);</span><br></pre></td></tr></table></figure></p>
 <p>因为数据结构是单层的，所以以上解析已经满足，但是还需要有优化<br>1、单引号和双引号的替换会把中间的引号也替换掉，而本意是只替换最前一个和最后一个<br>2、没有考虑多层嵌套导致的问题</p>
 
@@ -190,6 +190,17 @@
 	</div>
 
       
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/fe//" class="article-tag-list-link color3">fe</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
       
 
@@ -203,7 +214,7 @@
 <nav id="article-nav">
   
   
-    <a href="/doc/markdown-demo/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/tools/markdown-demo/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">Markdown语法备份</div>
       <i class="icon-circle-right"></i>
     </a>
@@ -373,19 +384,23 @@ MathJax.Hub.Queue(function() {
               </li>
             
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">hls</a>
+              </li>
+            
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">h5player</a>
+              </li>
+            
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">m3u8</a>
+              </li>
+            
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">jsvascript</a>
               </li>
             
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">hls h5player m3u8</a>
-              </li>
-            
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">tag1</a>
-              </li>
-            
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">tag2</a>
+                <a href="javascript:void(0)" class="js-tag color4">markdown</a>
               </li>
             
               <li class="article-tag-list-item">
