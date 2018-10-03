@@ -1,11 +1,11 @@
 ---
 title: 常用js通用逻辑片段汇总
-toc: true
 date: 2018-10-02 17:37:41
 tags: 
 - jsvascript
 categories:
 - fe
+toc: true
 ---
 平时开发总会遇到一些通用问题解决的代码片段，每次遇到的时候还总会重复查找，整理个文档持续追加，算是给自己做个备份
 <!-- more -->
