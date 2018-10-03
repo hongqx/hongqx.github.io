@@ -6,15 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://hongqx.github.io">
-  <title>Tag: nginx | Shining Star</title>
+  <title>常用js通用逻辑片段汇总 | Shining Star</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Shining Star">
-<meta property="og:url" content="http://hongqx.github.io/tags/nginx/index.html">
+  <meta name="description" content="平时开发总会遇到一些通用问题解决的代码片段，每次遇到的时候还总会重复查找，整理个文档持续追加，算是给自己做个备份">
+<meta name="keywords" content="jsvascript">
+<meta property="og:type" content="article">
+<meta property="og:title" content="常用js通用逻辑片段汇总">
+<meta property="og:url" content="http://hongqx.github.io/fe/jsScript-code-snippets/index.html">
 <meta property="og:site_name" content="Shining Star">
+<meta property="og:description" content="平时开发总会遇到一些通用问题解决的代码片段，每次遇到的时候还总会重复查找，整理个文档持续追加，算是给自己做个备份">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-10-03T05:08:02.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Shining Star">
+<meta name="twitter:title" content="常用js通用逻辑片段汇总">
+<meta name="twitter:description" content="平时开发总会遇到一些通用问题解决的代码片段，每次遇到的时候还总会重复查找，整理个文档持续追加，算是给自己做个备份">
   
     <link rel="alternative" href="/atom.xml" title="Shining Star" type="application/atom+xml">
   
@@ -154,48 +159,49 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-jsScript-code-snippets" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/fe/nginx-install/" class="archive-article-date">
-  	<time datetime="2018-07-31T07:49:48.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-31</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/fe/nginx-install/">Nginx详细安装部署教程</a>
+    <h1 class="article-title" itemprop="name">
+      常用js通用逻辑片段汇总
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/fe/jsScript-code-snippets/" class="archive-article-date">
+  	<time datetime="2018-10-02T09:37:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-02</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>平时开发总会遇到一些通用问题解决的代码片段，每次遇到的时候还总会重复查找，整理个文档持续追加，算是给自己做个备份<br><a id="more"></a></p>
+<h3 id="类似json的字符串转换成为对象"><a href="#类似json的字符串转换成为对象" class="headerlink" title="类似json的字符串转换成为对象"></a>类似json的字符串转换成为对象</h3><p>近期有个前端小白朋友遇到一个问题，后端给吐出了一个长得很像json的字符串，但是不是标准的json,需要自己将其解析，为了解决问题写了如下代码<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">strToJsonObject</span>(<span class="params">str</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> arr = str.replace(<span class="regexp">/\s|\xA0/g</span>,<span class="string">""</span>).substr(<span class="number">1</span>,str.length<span class="number">-2</span>).split(<span class="string">','</span>);</span><br><span class="line">    <span class="keyword">var</span> obj = &#123;&#125;;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>, _len = arr.length; i &lt; _len; i++)&#123;</span><br><span class="line">        <span class="keyword">var</span> _subArr = arr[i].split(<span class="string">":"</span>);</span><br><span class="line">        <span class="keyword">var</span> _key = _subArr[<span class="number">0</span>].replace(<span class="regexp">/\"/g</span>, <span class="string">""</span>).replace(<span class="regexp">/\'/g</span>, <span class="string">""</span>);</span><br><span class="line">        <span class="keyword">var</span> _value = _subArr[<span class="number">1</span>].replace(<span class="regexp">/\"/g</span>, <span class="string">""</span>).replace(<span class="regexp">/\'/g</span>, <span class="string">""</span>);</span><br><span class="line">        obj[_key] = _value;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> obj;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//test&#123;"key1":"value1</span></span><br><span class="line"><span class="keyword">var</span> _string = <span class="string">'&#123;"key1":"value1","key2":"value2","key3":"&#123;"key1":"value1"&#125;"&#125;'</span>;</span><br><span class="line"><span class="keyword">var</span> retObj = strToJsonObject(_string);</span><br></pre></td></tr></table></figure></p>
+<p>因为数据结构是单层的，所以以上解析已经满足，但是还需要有优化<br>1、单引号和双引号的替换会把中间的引号也替换掉，而本意是只替换最前一个和最后一个<br>2、没有考虑多层嵌套导致的问题</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">nginx</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">jsvascript</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -208,17 +214,66 @@
 	</div>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/fe/hls-tag-summarize/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">hls-tag-summarize</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#类似json的字符串转换成为对象"><span class="toc-number">1.</span> <span class="toc-text">类似json的字符串转换成为对象</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -241,9 +296,9 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
