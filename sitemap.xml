@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://hongqx.github.io/fe/hls-tag-summarize/</loc>
+    
+    <lastmod>2018-10-03T09:39:58.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://hongqx.github.io/doc/markdown-demo/</loc>
+    
+    <lastmod>2018-10-03T05:10:36.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://hongqx.github.io/fe/jsScript-code-snippets/</loc>
     
     <lastmod>2018-10-03T05:08:02.000Z</lastmod>
@@ -9,23 +23,9 @@
   </url>
   
   <url>
-    <loc>http://hongqx.github.io/fe/hls-tag-summarize/</loc>
-    
-    <lastmod>2018-10-03T05:04:58.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://hongqx.github.io/fe/hexo-command/</loc>
     
     <lastmod>2018-10-03T04:55:13.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://hongqx.github.io/markdown-demo.html</loc>
-    
-    <lastmod>2018-10-03T04:54:58.336Z</lastmod>
     
   </url>
   
