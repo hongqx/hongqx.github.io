@@ -5,6 +5,6 @@ tags:
 - design pattern
 - 单例
 categories:
-- fe
+- design-pattern
 toc: true
 ---
