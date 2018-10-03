@@ -1,10 +1,8 @@
 ---
 title: Markdown语法备份
-date: 2018-10-02 11:39:41
+date: 2017-10-02 11:39:41
 tags:
- - markdown
 categories:
- - tools
 toc: true
 ---
 比较全面的markdown预发备份，来自作业部落
