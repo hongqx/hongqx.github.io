@@ -2,6 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://hongqx.github.io/fe/hls-tag-summarize/</loc>
+    
+    <lastmod>2018-10-03T05:04:58.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://hongqx.github.io/fe/hexo-command/</loc>
+    
+    <lastmod>2018-10-03T04:55:13.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://hongqx.github.io/markdown-demo.html</loc>
+    
+    <lastmod>2018-10-03T04:54:58.336Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://hongqx.github.io/fe/webpack-dynamic-loading/</loc>
+    
+    <lastmod>2018-10-03T04:08:48.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://hongqx.github.io/design-pattern/design-patterns-singleton/</loc>
     
     <lastmod>2018-10-03T03:56:43.751Z</lastmod>
@@ -9,44 +37,9 @@
   </url>
   
   <url>
-    <loc>http://hongqx.github.io/fe/hls-tag-summarize/</loc>
-    
-    <lastmod>2018-10-03T03:54:19.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://hongqx.github.io/tools/markdown-demo/</loc>
-    
-    <lastmod>2018-10-03T03:54:15.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://hongqx.github.io/fe/webpack-dynamic-loading/</loc>
-    
-    <lastmod>2018-10-03T03:53:47.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://hongqx.github.io/fe/jsScript-code-snippets/</loc>
-    
-    <lastmod>2018-10-03T03:53:10.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://hongqx.github.io/fe/chrome-video-auto-play/</loc>
     
     <lastmod>2018-10-03T03:52:32.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://hongqx.github.io/fe/hexo-command/</loc>
-    
-    <lastmod>2018-10-03T03:51:03.000Z</lastmod>
     
   </url>
   
