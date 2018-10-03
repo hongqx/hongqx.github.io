@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://hongqx.github.io/design-pattern/design-patterns-singleton/</loc>
+    
+    <lastmod>2018-10-03T03:56:43.751Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://hongqx.github.io/fe/hls-tag-summarize/</loc>
     
     <lastmod>2018-10-03T03:54:19.000Z</lastmod>
@@ -26,13 +33,6 @@
     <loc>http://hongqx.github.io/fe/jsScript-code-snippets/</loc>
     
     <lastmod>2018-10-03T03:53:10.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://hongqx.github.io/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/design-patterns-singleton/</loc>
-    
-    <lastmod>2018-10-03T03:52:48.000Z</lastmod>
     
   </url>
   
