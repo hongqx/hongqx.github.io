@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Shining Star</title>
+  
+  <subtitle>To meet a better self!!</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://hongqx.github.io/"/>
+  <updated>2019-12-11T03:56:24.296Z</updated>
+  <id>http://hongqx.github.io/</id>
+  
+  <author>
+    <name>Shining Star</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>peerDependency</title>
+    <link href="http://hongqx.github.io/webpack/peerDependency/"/>
+    <id>http://hongqx.github.io/webpack/peerDependency/</id>
+    <published>2019-12-11T03:54:51.000Z</published>
+    <updated>2019-12-11T03:56:24.296Z</updated>
+    
+    <content type="html"><![CDATA[<a id="more"></a>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+
+      
+    
+    </summary>
+    
+      <category term="webpack" scheme="http://hongqx.github.io/categories/webpack/"/>
+    
+    
+      <category term="node_modules" scheme="http://hongqx.github.io/tags/node-modules/"/>
+    
+      <category term="webpack" scheme="http://hongqx.github.io/tags/webpack/"/>
+    
+      <category term="peerDependency" scheme="http://hongqx.github.io/tags/peerDependency/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>anti_stealing_link</title>
+    <link href="http://hongqx.github.io/doc/anti-stealing-link/"/>
+    <id>http://hongqx.github.io/doc/anti-stealing-link/</id>
+    <published>2019-12-11T03:54:30.000Z</published>
+    <updated>2019-12-11T03:54:30.441Z</updated>
+    
+    <content type="html"><![CDATA[<p><a id="more"></a>s</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>dns</title>
+    <link href="http://hongqx.github.io/doc/dns/"/>
+    <id>http://hongqx.github.io/doc/dns/</id>
+    <published>2019-11-14T02:28:42.000Z</published>
+    <updated>2019-11-14T02:34:21.092Z</updated>
+    
+    <content type="html"><![CDATA[<p><a id="more"></a>s<br><a href="http://www.linkedkeeper.com/171.html" target="_blank" rel="noopener">HttpDns 原理是什么</a><br><a href="https://blog.csdn.net/kim_weir/article/details/78465641" target="_blank" rel="noopener">DNS详解</a><br><a href="https://www.cnblogs.com/heluan/p/8620312.html" target="_blank" rel="noopener">http1.0、http1.1、http2.0的区别</a><br><a href="https://blog.csdn.net/Lee_Swifter/article/details/78236173" target="_blank" rel="noopener">OkHttp接入HttpDNS</a><br><a href="https://blog.csdn.net/leelit/article/details/77829196" target="_blank" rel="noopener">HTTPS IP直连问题小结</a><br><a href="https://blog.51cto.com/zengestudy/2170245" target="_blank" rel="noopener">HTTPS之SNI介绍</a><br><a href="https://www.iteye.com/blog/flyvszhb-2210368" target="_blank" rel="noopener">DNS解析过程原理【深入浅出详解</a><br><a href="https://zhuanlan.zhihu.com/p/51529142" target="_blank" rel="noopener">全面了解移动端DNS域名劫持等杂症：原理、根源、HttpDNS解决方案等</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>常用js通用逻辑片段汇总</title>
+    <link href="http://hongqx.github.io/fe/jsScript-code-snippets/"/>
+    <id>http://hongqx.github.io/fe/jsScript-code-snippets/</id>
+    <published>2018-10-02T09:37:41.000Z</published>
+    <updated>2019-07-14T05:47:38.045Z</updated>
+    
+    <content type="html"><![CDATA[<p>平时开发总会遇到一些通用问题解决的代码片段，每次遇到的时候还总会重复查找，整理个文档持续追加，算是给自己做个备份<br><a id="more"></a></p><h3 id="类似json的字符串转换成为对象"><a href="#类似json的字符串转换成为对象" class="headerlink" title="类似json的字符串转换成为对象"></a>类似json的字符串转换成为对象</h3><p>近期有个前端小白朋友遇到一个问题，后端给吐出了一个长得很像json的字符串，但是不是标准的json,需要自己将其解析，为了解决问题写了如下代码<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">strToJsonObject</span>(<span class="params">str</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> arr = str.replace(<span class="regexp">/\s|\xA0/g</span>,<span class="string">""</span>).substr(<span class="number">1</span>,str.length<span class="number">-2</span>).split(<span class="string">','</span>);</span><br><span class="line">    <span class="keyword">var</span> obj = &#123;&#125;;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>, _len = arr.length; i &lt; _len; i++)&#123;</span><br><span class="line">        <span class="keyword">var</span> _subArr = arr[i].split(<span class="string">":"</span>);</span><br><span class="line">        <span class="keyword">var</span> _key = _subArr[<span class="number">0</span>].replace(<span class="regexp">/\"/g</span>, <span class="string">""</span>).replace(<span class="regexp">/\'/g</span>, <span class="string">""</span>);</span><br><span class="line">        <span class="keyword">var</span> _value = _subArr[<span class="number">1</span>].replace(<span class="regexp">/\"/g</span>, <span class="string">""</span>).replace(<span class="regexp">/\'/g</span>, <span class="string">""</span>);</span><br><span class="line">        obj[_key] = _value;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> obj;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//test&#123;"key1":"value1</span></span><br><span class="line"><span class="keyword">var</span> _string = <span class="string">'&#123;"key1":"value1","key2":"value2","key3":"&#123;"key1":"value1"&#125;"&#125;'</span>;</span><br><span class="line"><span class="keyword">var</span> retObj = strToJsonObject(_string);</span><br></pre></td></tr></table></figure></p><p>因为数据结构是单层的，所以以上解析已经满足，但是还需要有优化<br>1、单引号和双引号的替换会把中间的引号也替换掉，而本意是只替换最前一个和最后一个<br>2、没有考虑多层嵌套导致的问题</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;平时开发总会遇到一些通用问题解决的代码片段，每次遇到的时候还总会重复查找，整理个文档持续追加，算是给自己做个备份&lt;br&gt;
+    
+    </summary>
+    
+      <category term="fe" scheme="http://hongqx.github.io/categories/fe/"/>
+    
+    
+      <category term="jsvascript" scheme="http://hongqx.github.io/tags/jsvascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hls-tag-summarize</title>
+    <link href="http://hongqx.github.io/fe/hls-tag-summarize/"/>
+    <id>http://hongqx.github.io/fe/hls-tag-summarize/</id>
+    <published>2018-10-02T03:36:14.000Z</published>
+    <updated>2019-07-14T05:47:38.045Z</updated>
+    
+    <content type="html"><![CDATA[<p>自己接触hls很久了，自从开始接触h5播放器，就开始接触hls、m3u8这些关键词，对这些概念和使用方式都能详细说出，感觉了解还挺多，但是上周遇到一个公司的视频在ios系统的UC浏览器上总是只播放广告之后，中断了，无法继续播放的问题，排查结果是UC自己的播放器遇到EXT-X-TARGETDURATION自动结束播放，而公司内的针对广告和正片的playlist合并，每个广告内容结束都会有EXT-X-TARGETDURATION，于是UC的开发和我开始了关于这个标签的撕逼，为了不给打脸，看来得对hls的各种tag有个总结了<img src="/assets/emoji/wulian.gif" alt><br><a id="more"></a></p><h3 id="关于hls"><a href="#关于hls" class="headerlink" title="关于hls"></a>关于hls</h3><p>   <strong>HLS</strong>，即<strong>HTTP Live Streaming</strong>，是一个由苹果公司提出的基于HTTP的流媒体网络传输协议, 其工作原理是把整个流分成有一个个小的基于http的文件来做传输，当媒体流正在播放时，客户端可以选择从许多不同的备用源中以不同的速率下载同样的资源，允许流媒体会话适应不同的数据速率。客户端会先下载一个包含元数据列表的<a href="https://zh.wikipedia.org/w/index.php?title=Extended_M3U&amp;action=edit&amp;redlink=1" target="_blank" rel="noopener">extended M3U (m3u8)playlist</a>文件，按照一定的规则解析文件内容，从而得到可用的媒体流地址，再持续下载媒体资源。</p><h3 id="协议简介"><a href="#协议简介" class="headerlink" title="协议简介"></a>协议简介</h3><blockquote><ul><li>视频单个媒资资源的封装格式必须是ts</li><li>视频的编码格式为H264,音频编码格式为MP3、AAC或者AC-3</li><li>必须要有用于控制的m3u8索引列表</li></ul></blockquote><h3 id="使用范围"><a href="#使用范围" class="headerlink" title="使用范围"></a>使用范围</h3><blockquote><ol><li>因为该协议由苹果推出，所以在苹果上的支持也是最好的，在iphone或者是mac上，可以直接将m3u8文件作为videoElement的src，支持原生播放</li></ol></blockquote><blockquote><ol start="2"><li>在chrome下或者android系统下是无法播放的(除非浏览器支持该视频类型的解码)</li></ol></blockquote><blockquote><ol start="3"><li>用于web端直播，自从adobe宣布不再对flash做维护开始，web端的直播支持成了一个继续解决的问题，而hls支持不断追加m3u8文件中的ts列表实现直播流的传输（当然有一个弊端就是直播会有延时,延迟时间无法下到10秒以下）,目前web端的直播大多数都通过hls来实现</li></ol></blockquote><blockquote><ol start="4"><li>用于web端的点播。web端点播方案主要依赖于html5标准中的videoElement/audioElement, 支持的最普遍的编码格式为mp4, 但是使用videoElement播放视频有诸多弊端，主要来自缓存和分片两个方面，随着<strong>MSE</strong>(<a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Media_Source_Extensions_API" target="_blank" rel="noopener">Media Source Extensions API</a>)这个API的出现，可以结合HLS格式进行视频流的加载，目前比较流行的实现是<strong><a href="https://github.com/video-dev/hls.js" target="_blank" rel="noopener">hls.js</a></strong>这个库</li></ol></blockquote><h3 id="关于m3u8"><a href="#关于m3u8" class="headerlink" title="关于m3u8"></a>关于m3u8</h3><p>m3u8即是hls协议的index文件，一级index文件可以指定不同码率的二级m3u8文件的列表如示例1中所示，二级的index文件负责输出ts文件的下载地址，如示例2中所示</p><p><strong>m3u8示例1</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">#EXTM3U</span><br><span class="line">#EXT-X-STREAM-INF:BANDWIDTH=150000,RESOLUTION=416x234,CODECS=&quot;avc1.42e00a,mp4a.40.2&quot;</span><br><span class="line">http://example.com/low/index.m3u8</span><br><span class="line">#EXT-X-STREAM-INF:BANDWIDTH=240000,RESOLUTION=416x234,CODECS=&quot;avc1.42e00a,mp4a.40.2&quot;</span><br><span class="line">http://example.com/lo_mid/index.m3u8</span><br><span class="line">#EXT-X-STREAM-INF:BANDWIDTH=440000,RESOLUTION=416x234,CODECS=&quot;avc1.42e00a,mp4a.40.2&quot;</span><br><span class="line">http://example.com/hi_mid/index.m3u8</span><br><span class="line">#EXT-X-STREAM-INF:BANDWIDTH=640000,RESOLUTION=640x360,CODECS=&quot;avc1.42e00a,mp4a.40.2&quot;</span><br><span class="line">http://example.com/high/index.m3u8</span><br><span class="line">#EXT-X-STREAM-INF:BANDWIDTH=64000,CODECS=&quot;mp4a.40.5&quot;</span><br><span class="line">http://example.com/audio/index.m3u8</span><br></pre></td></tr></table></figure><p><strong>m3u8示例2</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">#EXTM3U</span><br><span class="line">#EXT-X-TARGETDURATION:10</span><br><span class="line">#EXT-X-VERSION:3</span><br><span class="line">#EXTINF:10,</span><br><span class="line">000.ts</span><br><span class="line">#EXTINF:10,</span><br><span class="line">001.ts</span><br><span class="line">#EXTINF:10,</span><br><span class="line">002.ts</span><br><span class="line">#EXT-X-DISCONTINUITY</span><br><span class="line">#EXTINF:10,</span><br><span class="line">010.ts</span><br><span class="line">#EXTINF:10,</span><br><span class="line">010.ts</span><br><span class="line">#EXT-X-ENDLIST</span><br></pre></td></tr></table></figure></p><h4 id="关于常见格式-m3u和-m3u8"><a href="#关于常见格式-m3u和-m3u8" class="headerlink" title="关于常见格式.m3u和.m3u8"></a>关于常见格式.m3u和.m3u8</h4><p> M3U文件中，以.m3u8结尾，或其http头中”Content-Type”字段为” application/vnd.apple.mpegurl”会以UTF-8编码，而以”m3u” 或其http对应字段为” “audio/mpegurl”会以US-ASCII编码。播放列表文请求头类型必须以上面某一匹配对对应<br><a href="https://blog.csdn.net/zhoushuaiyin/article/details/38759427?utm_source=copy" target="_blank" rel="noopener">该说明参考文档</a></p><h4 id="tags"><a href="#tags" class="headerlink" title="tags"></a>tags</h4><h5 id="一级索引tag"><a href="#一级索引tag" class="headerlink" title="一级索引tag"></a>一级索引tag</h5><blockquote><ul><li></li></ul></blockquote><h5 id="二级索引tag"><a href="#二级索引tag" class="headerlink" title="二级索引tag"></a>二级索引tag</h5><h5 id="EXT-X-DISCONTINUITY和EXT-X-ENDLIST的区别"><a href="#EXT-X-DISCONTINUITY和EXT-X-ENDLIST的区别" class="headerlink" title="EXT-X-DISCONTINUITY和EXT-X-ENDLIST的区别"></a>EXT-X-DISCONTINUITY和EXT-X-ENDLIST的区别</h5><p>EXT-X-DISCONTINUITY和#EXT-X-ENDLIST这两个标签，都有中断的意思，这也是之前我和UC的播放器的开发出现分歧的地方，UC劫持video之后的播放器，在检测到EXT-X-DISCONTINUITY这个标签的时候，就直接中断视频的加载，认为播放结束了,我司播放视频会将广告和正片合并成为一个文件，合并的时候广告ts列表和正片ts列表中间会出现EXT-X-DISCONTINUITY标签，在UC浏览器中只能播放广告，然后就停住了，停住了，停住了!!! <img src="/assets/emoji/icons-50_02.png" alt></p><blockquote><ul><li><strong>EXT-X-DISCONTINUITY</strong>表示当前分割片段和紧随其后的片段之间的编码是间断的，一般出现这种情况是因为文件格式、媒体轨道的数量和类型、编码参数、编码序列、时间戳序列等发生了变化，需要在m3u8中加入#EXT-X-DISCONTINUITY隔开，让播放器解码流程重新初始化，这个标签在分片列表中可以出现多次。一般在业务处理中会用于不同媒体资源的拼接连播或者是广告片段的插入<br><a href="https://tools.ietf.org/html/draft-pantos-http-live-streaming-13#section-3.4.11" target="_blank" rel="noopener">参考规范3.4.11</a></li></ul></blockquote><blockquote><ul><li><strong>EXT-X-ENDLIST</strong>表示在当前媒体ts列表中已经没有分片了，这个标签可以在列表的任何地方出现，但是在playlist中只能出现一次，一般点播按理中m3u8文件该标签都会出现在列表最后一行，标识播放完成；而在直播文件中添加了该标签标识直播结束，后面追加的ts不会再被加载。<br><a href="https://tools.ietf.org/html/draft-pantos-http-live-streaming-13#section-3.4.8" target="_blank" rel="noopener">参考规范3.4.8</a></li></ul></blockquote><p>根据以上对两个标签的说明，UC播放器的处理方式显然是有问题的，但是对方也提出一个就是加了EXT-X-DISCONTINUITY的文件，在ffmpeg播放器中也无法播放，我查了下，ffmpeg播放器不支持EXT-X-DISCONTINUITY<a href="https://trac.ffmpeg.org/ticket/5419" target="_blank" rel="noopener">说明链接</a>，但是从规范的说明和实际的业务场景（主要是广告<img src="/assets/emoji/wulian.gif" alt>),EXT-X-DISCONTINUITY是个必须支持的标签。。。当然针对这个标签，也会有一些兼容性的问题，例如我遇到的无法加载，或者该标签后面的内容没有画面等等，也是个坑，不过apple的原生处理（safari）下是支持的，播放并不会出现问题。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;自己接触hls很久了，自从开始接触h5播放器，就开始接触hls、m3u8这些关键词，对这些概念和使用方式都能详细说出，感觉了解还挺多，但是上周遇到一个公司的视频在ios系统的UC浏览器上总是只播放广告之后，中断了，无法继续播放的问题，排查结果是UC自己的播放器遇到EXT-X-TARGETDURATION自动结束播放，而公司内的针对广告和正片的playlist合并，每个广告内容结束都会有EXT-X-TARGETDURATION，于是UC的开发和我开始了关于这个标签的撕逼，为了不给打脸，看来得对hls的各种tag有个总结了&lt;img src=&quot;/assets/emoji/wulian.gif&quot; alt&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="fe" scheme="http://hongqx.github.io/categories/fe/"/>
+    
+    
+      <category term="hls" scheme="http://hongqx.github.io/tags/hls/"/>
+    
+      <category term="h5player" scheme="http://hongqx.github.io/tags/h5player/"/>
+    
+      <category term="m3u8" scheme="http://hongqx.github.io/tags/m3u8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于hexo的一些常用命令汇总</title>
+    <link href="http://hongqx.github.io/fe/hexo-command/"/>
+    <id>http://hongqx.github.io/fe/hexo-command/</id>
+    <published>2018-08-31T07:12:33.000Z</published>
+    <updated>2019-11-14T02:27:46.982Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近使用hexo构建博客，将一些常用命令，以及自己使用的主题及主题配置本分说明下，<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">全面的hexo文档</a></p><a id="more"></a><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> npm install -g hexo</span><br></pre></td></tr></table></figure><h2 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> cd ./Workspaces/hexo/</span><br><span class="line"><span class="meta">$</span> hexo init</span><br></pre></td></tr></table></figure><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> hexo g # 生成静态文件 等同于hexo generate </span><br><span class="line"><span class="meta">$</span> hexo s # 启动服务 等同于hexo server</span><br><span class="line"><span class="meta">$</span> hexo d #完整命令为hexo deploy,将本地编译好的静态文件发布到github上</span><br><span class="line"><span class="meta">$</span> hexo n #完整命令为hexo new,新建一篇文章</span><br><span class="line"><span class="meta">$</span> hexo clean #清除当前项目的静态文件</span><br></pre></td></tr></table></figure><h3 id="端口和配置"><a href="#端口和配置" class="headerlink" title="端口和配置"></a>端口和配置</h3><p>hexo启动的时候默认端口号为4000，想要更改启动的端口号如下<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> hexo s -p 5000</span><br></pre></td></tr></table></figure></p><p>如果不想每次都更改这个文件这么麻烦的话，可以在hexo的配置文件_config.yml中修改或增加这段代码<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> Server</span><br><span class="line">server:</span><br><span class="line">  port: 4000</span><br><span class="line">  compress: true</span><br><span class="line">  header: true</span><br></pre></td></tr></table></figure></p><h2 id="修改主题"><a href="#修改主题" class="headerlink" title="修改主题"></a>修改主题</h2><h3 id="拷贝主题"><a href="#拷贝主题" class="headerlink" title="拷贝主题"></a>拷贝主题</h3><p>我使用的主题是yilia这个主题, <a href="https://github.com/litten/hexo-theme-yilia.git" target="_blank" rel="noopener">hexo-theme-yilia主题github地址</a>,使用方法将改主题clone到themes之下<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia</span><br><span class="line"><span class="meta">#</span> 拷贝完成切换到主题目录下</span><br><span class="line"><span class="meta">$</span> cd themes </span><br><span class="line"><span class="meta">#</span> 能直接查看theme中多了一个yilia的目录，就是主题配置目录</span><br><span class="line"><span class="meta">$</span> ls -l</span><br></pre></td></tr></table></figure></p><h3 id="启用主题"><a href="#启用主题" class="headerlink" title="启用主题"></a>启用主题</h3><p>回到项目的主目录，会看到有_config.yml这样一个文件，打开该文件，将配置中的theme修改为你先使用的主题名称<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> Extensions</span><br><span class="line"><span class="meta">#</span># Plugins: https://hexo.io/plugins/</span><br><span class="line"><span class="meta">#</span># Themes: https://hexo.io/themes/</span><br><span class="line">theme: yilia</span><br></pre></td></tr></table></figure></p><p>然后重新编译静态文件 启动服务,就能通过<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a>, 在浏览器中看到自己的博客了<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> hexo clean</span><br><span class="line"><span class="meta">$</span> hexo g</span><br><span class="line"><span class="meta">$</span> hexo s</span><br></pre></td></tr></table></figure></p><h3 id="主题自定义配置"><a href="#主题自定义配置" class="headerlink" title="主题自定义配置"></a>主题自定义配置</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.article-entry</span> <span class="selector-class">.highlight</span>, <span class="selector-class">.article-entry</span> <span class="selector-tag">pre</span> &#123;</span><br><span class="line">  <span class="attribute">background</span>: <span class="built_in">linear-gradient</span>(to bottom, #192224 0%, #21728b 100%);</span><br><span class="line">  <span class="attribute">font-family</span>: Menlo,Monaco,Consolas,<span class="string">"Courier New"</span>,monospace;</span><br><span class="line">  <span class="attribute">font-style</span>: italic;</span><br><span class="line">  <span class="attribute">color</span>:<span class="number">#a9b7c6</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">pre</span> <span class="selector-class">.class</span> <span class="selector-class">.params</span>, <span class="selector-tag">pre</span> <span class="selector-class">.function</span> <span class="selector-class">.keyword</span>, <span class="selector-tag">pre</span> <span class="selector-class">.keyword</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#e8bf6a</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">pre</span> <span class="selector-class">.string</span>, <span class="selector-tag">pre</span> <span class="selector-class">.value</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#6a8759</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">pre</span> <span class="selector-class">.comment</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#a9b7c6</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">function</span> <span class="selector-tag">name</span> : <span class="selector-id">#268bd2</span></span><br><span class="line"><span class="selector-tag">number</span> <span class="selector-id">#6897bb</span></span><br><span class="line"></span><br><span class="line"><span class="selector-tag">main</span> <span class="selector-id">#d7ecff</span></span><br><span class="line"><span class="selector-tag">bg-pattern</span> &#123;</span><br><span class="line">    <span class="attribute">background</span>: <span class="built_in">url</span>(../img/bg-pattern.png) repeat;</span><br><span class="line">    <span class="attribute">opacity</span>: <span class="number">0.5</span>;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100vw</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100vh</span>;</span><br><span class="line">    <span class="attribute">position</span>: fixed;</span><br><span class="line">    <span class="attribute">z-index</span>: -<span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近使用hexo构建博客，将一些常用命令，以及自己使用的主题及主题配置本分说明下，&lt;a href=&quot;https://hexo.io/zh-cn/docs/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;全面的hexo文档&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="fe" scheme="http://hongqx.github.io/categories/fe/"/>
+    
+    
+      <category term="hexo" scheme="http://hongqx.github.io/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>webpack动态加载</title>
+    <link href="http://hongqx.github.io/fe/webpack-dynamic-loading/"/>
+    <id>http://hongqx.github.io/fe/webpack-dynamic-loading/</id>
+    <published>2018-08-20T11:30:28.000Z</published>
+    <updated>2019-07-14T05:47:38.046Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="fe" scheme="http://hongqx.github.io/categories/fe/"/>
+    
+    
+      <category term="webpack" scheme="http://hongqx.github.io/tags/webpack/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Nginx详细安装部署教程</title>
+    <link href="http://hongqx.github.io/fe/nginx-install/"/>
+    <id>http://hongqx.github.io/fe/nginx-install/</id>
+    <published>2018-07-31T07:49:48.000Z</published>
+    <updated>2019-07-14T05:47:38.046Z</updated>
+    
+    <content type="html"><![CDATA[<p>转载自：<a href="https://www.cnblogs.com/taiyonghai/p/6728707.html" target="_blank" rel="noopener">Nginx详细安装部署教程</a><br><a id="more"></a></p><h3 id="安装遇到的问题"><a href="#安装遇到的问题" class="headerlink" title="安装遇到的问题"></a>安装遇到的问题</h3><h4 id="重启防火墙的时候遇到了如下问题"><a href="#重启防火墙的时候遇到了如下问题" class="headerlink" title="重启防火墙的时候遇到了如下问题"></a>重启防火墙的时候遇到了如下问题</h4><p>输入如下命令<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//重启防火墙</span><br><span class="line">service iptables restart</span><br></pre></td></tr></table></figure></p><p>输入以上命令的时候，出现了如下报错<strong><em>Failed to restart iptables.service: Unit not found</em></strong>,后来排查了之后找到原因貌似是因为在<strong><em>CentOS 7或RHEL 7或Fedora中防火墙由firewalld来管理</em></strong>,想要采用<code>service iptables restart</code>需要执行如下命令<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">systemctl stop firewalld</span><br><span class="line">systemctl mask firewalld</span><br><span class="line"></span><br><span class="line">//安装iptables-services：</span><br><span class="line">yum install iptables-services</span><br><span class="line"></span><br><span class="line">//设置开机启动</span><br><span class="line">systemctl enable iptables</span><br></pre></td></tr></table></figure></p><p>后续运行<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">systemctl restart iptables</span><br><span class="line"></span><br><span class="line">//命令有stop|start|restart</span><br><span class="line">//or</span><br><span class="line">//service iptables restart</span><br><span class="line">//命令有stop|start|restart</span><br></pre></td></tr></table></figure></p><p>在进行了以上步骤之后，又出现了新的问题提示<code>Redirecting to /bin/systemctl restart iptables.serviceJob for iptables.service failed because the control process exited with error code.See &quot;systemctl status iptables.service&quot; and &quot;journalctl -xe&quot; for details</code>,解决方案如下：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">//重新运行网络管理装置</span><br><span class="line"></span><br><span class="line">chkconfig network off</span><br><span class="line"></span><br><span class="line">chkconfig network on</span><br><span class="line"></span><br><span class="line">service NetworkManager stop</span><br><span class="line"></span><br><span class="line">service NetworkManager start</span><br></pre></td></tr></table></figure></p><p>这回终于重启成功，在host中配置了</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">47.104.185.99 nginx.test.com</span><br></pre></td></tr></table></figure><p>ping了一下nginx.test.com，链接成功</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ping nginx.test.com</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;转载自：&lt;a href=&quot;https://www.cnblogs.com/taiyonghai/p/6728707.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Nginx详细安装部署教程&lt;/a&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="fe" scheme="http://hongqx.github.io/categories/fe/"/>
+    
+    
+      <category term="nginx" scheme="http://hongqx.github.io/tags/nginx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>web端video自动播放策略</title>
+    <link href="http://hongqx.github.io/fe/chrome-video-auto-play/"/>
+    <id>http://hongqx.github.io/fe/chrome-video-auto-play/</id>
+    <published>2018-07-31T01:12:42.000Z</published>
+    <updated>2019-07-14T05:47:38.045Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近看 来自 Chrome 团队在 IO 2018上的 分享 <a href="https://www.youtube.com/watch?v=5azRhKsSU_M" target="_blank" rel="noopener">《Build awesome media experiences on the web》</a> 。大概主要是说关于 音视频在 Chrome 上的更新。其中业务团队需要及时关注新的 自动播放策略，虽然在去年9月份 Chrome 团队就更新了博客 <a href="https://developers.google.com/web/updates/2017/09/autoplay-policy-changes" target="_blank" rel="noopener">《Autoplay Policy Changes》</a>。 Chrome 会在 2018年 的第二个季度，采取新的自动播放策略。</p><p>目前该策略在很多场景已经存在，用户初始进入到视频页面的时候，会阻止默认自动播放，如果用户在当前域名下选择了播放，在多次选择之后，就会默认可执行自动播放。目前该策略也对我们线上的一些场景产生了影响，参照之前对safari11以上版本webkit内核根据用户设置阻止视频自动播放的案例的处理，下面是针对chrome上无法自动播放的一些整理，以及在移动web端自动播放支持的情况总结。<br><a id="more"></a></p><h3 id="自动播放的策略调整"><a href="#自动播放的策略调整" class="headerlink" title="自动播放的策略调整"></a>自动播放的策略调整</h3><p><img src="http://img1.vued.vanthink.cn/vueda728bcacf470e6922f5ba6325af54c81.png" alt="Chrome Autoplay Policy"><br>如图中所示:</p><ul><li>页面中的视频处于静音状态下是允许自动播放的，大概这个产品交互可以参考 微博的主站策略</li><li>如果用户与当前页面有任何的交互比如点击或者 tap 这样的行为，视频的自动播放将会允许(Safari 最早采用这个策略)</li><li>在移动端如果页面是被添加到桌面上，自动播放是云讯的。</li><li>在桌面端我们会根据用户的 媒体参与指数Media Engagement Index, MEI，后文会详细说这个) 来决定这个视频是否自动播放。</li></ul><p>如何判断当前媒体是否允许自动播放可以参考下面代码:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> promise = <span class="built_in">document</span>.querySelector(<span class="string">'video'</span>).play();</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> (promise !== <span class="literal">undefined</span>) &#123;  </span><br><span class="line">    promise.catch(<span class="function"><span class="params">error</span> =&gt;</span> &#123;</span><br><span class="line">        <span class="comment">// Auto-play was prevented</span></span><br><span class="line">        <span class="comment">// Show a UI element to let the user manually start playback</span></span><br><span class="line">    &#125;).then(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">        <span class="comment">// Auto-play started</span></span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><h3 id="iframe-下自动播放的调整"><a href="#iframe-下自动播放的调整" class="headerlink" title="iframe 下自动播放的调整"></a>iframe 下自动播放的调整</h3><p>Chrome 还强调了开发者可以通过 <strong>allow</strong> 属性来控制页面中通过 iframe 来控制引用页面内的媒体权限。<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- Autoplay is allowed. --&gt;</span>  </span><br><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">src</span>=<span class="string">"https://cross-origin.com/myvideo.html"</span> <span class="attr">allow</span>=<span class="string">"autoplay"</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- Autoplay and Fullscreen are allowed. --&gt;</span>  </span><br><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">src</span>=<span class="string">"https://cross-origin.com/myvideo.html"</span> <span class="attr">allow</span>=<span class="string">"autoplay; fullscreen"</span>&gt;</span></span><br></pre></td></tr></table></figure></p><p><em>如果是同一个域下的自动播放默认是允许的</em></p><h3 id="媒体参与指数-Media-Engagement-Index"><a href="#媒体参与指数-Media-Engagement-Index" class="headerlink" title="媒体参与指数 (Media Engagement Index)"></a>媒体参与指数 (Media Engagement Index)</h3><p>MEI 是一个评估用户对于当前站点的媒体参与程度的指数，它取决于下面几个维度:</p><p>用户在媒体上停留时间超过了 7秒以上<br>音频必须是展示出来，并且没有静音<br>与 video 之间有过交互<br>媒体的尺寸不小于 200x140.<br>你可以在 Chrome 的地址栏输入:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chrome:<span class="comment">//media-engagement</span></span><br></pre></td></tr></table></figure></p><p>如果你是作为开发者，你也可以手动调整这个策略:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chrome:<span class="comment">//flags/#autoplay-policy</span></span><br></pre></td></tr></table></figure></p><p>在地址栏输入以上的地址，可以进行手动的策略调整，进行测试。</p><h3 id="移动web如何实现自动播放的支持"><a href="#移动web如何实现自动播放的支持" class="headerlink" title="移动web如何实现自动播放的支持"></a>移动web如何实现自动播放的支持</h3><p>在chrome和safari调整期自动播放的策略之前，最最让人悲桑的就是移动端的自动播放过，很多第三方浏览器是直接不允许自动播放的，例如QQ浏览器、百度浏览器，当前还有万恶的UC浏览器，针对这些浏览器，宝宝只能很悲桑的说一声，要么你的公司能强制让这些大爷们给你做可自动播放配置，要么就去挑战提出要自动播放的产品吧放弃吧~~（ps：这个自动播放从用户角度来说确实也是合理的哈）</p><p>以上种种，在移动web端浏览器中实现自动播放希望渺茫，但是在自家app的webview中还是有一线希望的，前提是你要去找native开发哥哥帮你修改个webview的参数啦<br>android需要如下修改<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mWebview.getSettings().setMediaPlaybackRequiresUserGesture(<span class="literal">false</span>);</span><br></pre></td></tr></table></figure></p><p>ios需要添加webview的属性设置<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"> <span class="comment">//media的播放必须要用户行为触发</span></span><br><span class="line">_webView.mediaPlaybackRequiresUserAction = NO;</span><br></pre></td></tr></table></figure></p><p>如果希望自动播放时不要全屏，那么嗨需要设置下面的属性<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"> <span class="comment">//允许media在行间播放</span></span><br><span class="line">_webView.allowsInlineMediaPlayback = YES;</span><br></pre></td></tr></table></figure></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近看 来自 Chrome 团队在 IO 2018上的 分享 &lt;a href=&quot;https://www.youtube.com/watch?v=5azRhKsSU_M&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《Build awesome media experiences on the web》&lt;/a&gt; 。大概主要是说关于 音视频在 Chrome 上的更新。其中业务团队需要及时关注新的 自动播放策略，虽然在去年9月份 Chrome 团队就更新了博客 &lt;a href=&quot;https://developers.google.com/web/updates/2017/09/autoplay-policy-changes&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《Autoplay Policy Changes》&lt;/a&gt;。 Chrome 会在 2018年 的第二个季度，采取新的自动播放策略。&lt;/p&gt;
+&lt;p&gt;目前该策略在很多场景已经存在，用户初始进入到视频页面的时候，会阻止默认自动播放，如果用户在当前域名下选择了播放，在多次选择之后，就会默认可执行自动播放。目前该策略也对我们线上的一些场景产生了影响，参照之前对safari11以上版本webkit内核根据用户设置阻止视频自动播放的案例的处理，下面是针对chrome上无法自动播放的一些整理，以及在移动web端自动播放支持的情况总结。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="fe" scheme="http://hongqx.github.io/categories/fe/"/>
+    
+    
+      <category term="videoElement" scheme="http://hongqx.github.io/tags/videoElement/"/>
+    
+      <category term="autoplay" scheme="http://hongqx.github.io/tags/autoplay/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>设计模式系列-单例模式</title>
+    <link href="http://hongqx.github.io/design-pattern/design-patterns-singleton/"/>
+    <id>http://hongqx.github.io/design-pattern/design-patterns-singleton/</id>
+    <published>2018-07-31T01:09:41.000Z</published>
+    <updated>2019-07-14T05:47:38.045Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="design-pattern" scheme="http://hongqx.github.io/categories/design-pattern/"/>
+    
+    
+      <category term="design pattern" scheme="http://hongqx.github.io/tags/design-pattern/"/>
+    
+      <category term="单例" scheme="http://hongqx.github.io/tags/%E5%8D%95%E4%BE%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Markdown语法备份</title>
+    <link href="http://hongqx.github.io/doc/markdown-demo/"/>
+    <id>http://hongqx.github.io/doc/markdown-demo/</id>
+    <published>2017-10-02T03:39:41.000Z</published>
+    <updated>2019-07-14T05:47:38.045Z</updated>
+    
+    <content type="html"><![CDATA[<p>比较全面的markdown预发备份，来自作业部落<br>我们理解您需要更便捷更高效的工具记录思想，整理笔记、知识，并将其中承载的价值传播给他人，<strong>Cmd Markdown</strong> 是我们给出的答案 —— 我们为记录思想和分享知识提供更专业的工具。 您可以使用 Cmd Markdown：</p><blockquote><ul><li>整理知识，学习笔记</li><li>发布日记，杂文，所见所想</li><li>撰写发布技术文稿（代码支持）</li><li>撰写发布学术论文（LaTeX 公式支持）</li></ul></blockquote><a id="more"></a><p><img src="https://www.zybuluo.com/static/img/logo.png" alt="cmd-markdown-logo"></p><p>除了您现在看到的这个 Cmd Markdown 在线版本，您还可以前往以下网址下载：</p><h3 id="Windows-Mac-Linux-全平台客户端"><a href="#Windows-Mac-Linux-全平台客户端" class="headerlink" title="Windows/Mac/Linux 全平台客户端"></a><a href="https://www.zybuluo.com/cmd/" target="_blank" rel="noopener">Windows/Mac/Linux 全平台客户端</a></h3><blockquote><p>请保留此份 Cmd Markdown 的欢迎稿兼使用说明，如需撰写新稿件，点击顶部工具栏右侧的 <i class="icon-file"></i> <strong>新文稿</strong> 或者使用快捷键 <code>Ctrl+Alt+N</code>。</p></blockquote><hr><h2 id="什么是-Markdown"><a href="#什么是-Markdown" class="headerlink" title="什么是 Markdown"></a>什么是 Markdown</h2><p>Markdown 是一种方便记忆、书写的纯文本标记语言，用户可以使用这些标记符号以最小的输入代价生成极富表现力的文档：譬如您正在阅读的这份文档。它使用简单的符号标记不同的标题，分割不同的段落，<strong>粗体</strong> 或者 <em>斜体</em> 某些文字，更棒的是，它还可以</p><h3 id="1-制作一份待办事宜-Todo-列表"><a href="#1-制作一份待办事宜-Todo-列表" class="headerlink" title="1. 制作一份待办事宜 Todo 列表"></a>1. 制作一份待办事宜 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#13-待办事宜-todo-列表" target="_blank" rel="noopener">Todo 列表</a></h3><ul><li style="list-style: none"><input type="checkbox"> 支持以 PDF 格式导出文稿</li><li style="list-style: none"><input type="checkbox"> 改进 Cmd 渲染算法，使用局部渲染技术提高渲染效率</li><li style="list-style: none"><input type="checkbox" checked> 新增 Todo 列表功能</li><li style="list-style: none"><input type="checkbox" checked> 修复 LaTex 公式渲染问题</li><li style="list-style: none"><input type="checkbox" checked> 新增 LaTex 公式编号功能</li></ul><h3 id="2-书写一个质能守恒公式-LaTeX"><a href="#2-书写一个质能守恒公式-LaTeX" class="headerlink" title="2. 书写一个质能守恒公式[^LaTeX]"></a>2. 书写一个质能守恒公式[^LaTeX]</h3><p>$$E=mc^2$$</p><h3 id="3-高亮一段代码-code"><a href="#3-高亮一段代码-code" class="headerlink" title="3. 高亮一段代码[^code]"></a>3. 高亮一段代码[^code]</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@requires_authorization</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">SomeClass</span>:</span></span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    <span class="comment"># A comment</span></span><br><span class="line">    <span class="keyword">print</span> <span class="string">'hello world'</span></span><br></pre></td></tr></table></figure><h3 id="4-高效绘制-流程图"><a href="#4-高效绘制-流程图" class="headerlink" title="4. 高效绘制 流程图"></a>4. 高效绘制 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#7-流程图" target="_blank" rel="noopener">流程图</a></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">st=&gt;start: Start</span><br><span class="line">op=&gt;operation: Your Operation</span><br><span class="line">cond=&gt;condition: Yes or No?</span><br><span class="line">e=&gt;end</span><br><span class="line"></span><br><span class="line">st-&gt;op-&gt;cond</span><br><span class="line">cond(yes)-&gt;e</span><br><span class="line">cond(no)-&gt;op</span><br></pre></td></tr></table></figure><h3 id="5-高效绘制-序列图"><a href="#5-高效绘制-序列图" class="headerlink" title="5. 高效绘制 序列图"></a>5. 高效绘制 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#8-序列图" target="_blank" rel="noopener">序列图</a></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Alice-&gt;Bob: Hello Bob, how are you?</span><br><span class="line">Note right of Bob: Bob thinks</span><br><span class="line">Bob--&gt;Alice: I am good thanks!</span><br></pre></td></tr></table></figure><h3 id="6-高效绘制-甘特图"><a href="#6-高效绘制-甘特图" class="headerlink" title="6. 高效绘制 甘特图"></a>6. 高效绘制 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#9-甘特图" target="_blank" rel="noopener">甘特图</a></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">title 项目开发流程</span><br><span class="line">section 项目确定</span><br><span class="line">    需求分析       :a1, 2016-06-22, 3d</span><br><span class="line">    可行性报告     :after a1, 5d</span><br><span class="line">    概念验证       : 5d</span><br><span class="line">section 项目实施</span><br><span class="line">    概要设计      :2016-07-05  , 5d</span><br><span class="line">    详细设计      :2016-07-08, 10d</span><br><span class="line">    编码          :2016-07-15, 10d</span><br><span class="line">    测试          :2016-07-22, 5d</span><br><span class="line">section 发布验收</span><br><span class="line">    发布: 2d</span><br><span class="line">    验收: 3d</span><br></pre></td></tr></table></figure><h3 id="7-绘制表格"><a href="#7-绘制表格" class="headerlink" title="7. 绘制表格"></a>7. 绘制表格</h3><table><thead><tr><th>项目</th><th style="text-align:right">价格</th><th style="text-align:center">数量</th></tr></thead><tbody><tr><td>计算机</td><td style="text-align:right">\$1600</td><td style="text-align:center">5</td></tr><tr><td>手机</td><td style="text-align:right">\$12</td><td style="text-align:center">12</td></tr><tr><td>管线</td><td style="text-align:right">\$1</td><td style="text-align:center">234</td></tr></tbody></table><h3 id="8-更详细语法说明"><a href="#8-更详细语法说明" class="headerlink" title="8. 更详细语法说明"></a>8. 更详细语法说明</h3><p>想要查看更详细的语法说明，可以参考我们准备的 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown" target="_blank" rel="noopener">Cmd Markdown 简明语法手册</a>，进阶用户可以参考 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#cmd-markdown-高阶语法手册" target="_blank" rel="noopener">Cmd Markdown 高阶语法手册</a> 了解更多高级功能。</p><p>总而言之，不同于其它 <em>所见即所得</em> 的编辑器：你只需使用键盘专注于书写文本内容，就可以生成印刷级的排版格式，省却在键盘和工具栏之间来回切换，调整内容和格式的麻烦。<strong>Markdown 在流畅的书写和印刷级的阅读体验之间找到了平衡。</strong> 目前它已经成为世界上最大的技术分享网站 GitHub 和 技术问答网站 StackOverFlow 的御用书写格式。</p><hr><h2 id="什么是-Cmd-Markdown"><a href="#什么是-Cmd-Markdown" class="headerlink" title="什么是 Cmd Markdown"></a>什么是 Cmd Markdown</h2><p>您可以使用很多工具书写 Markdown，但是 Cmd Markdown 是这个星球上我们已知的、最好的 Markdown 工具——没有之一 ：）因为深信文字的力量，所以我们和你一样，对流畅书写，分享思想和知识，以及阅读体验有极致的追求，我们把对于这些诉求的回应整合在 Cmd Markdown，并且一次，两次，三次，乃至无数次地提升这个工具的体验，最终将它演化成一个 <strong>编辑/发布/阅读</strong> Markdown 的在线平台——您可以在任何地方，任何系统/设备上管理这里的文字。</p><h3 id="1-实时同步预览"><a href="#1-实时同步预览" class="headerlink" title="1. 实时同步预览"></a>1. 实时同步预览</h3><p>我们将 Cmd Markdown 的主界面一分为二，左边为<strong>编辑区</strong>，右边为<strong>预览区</strong>，在编辑区的操作会实时地渲染到预览区方便查看最终的版面效果，并且如果你在其中一个区拖动滚动条，我们有一个巧妙的算法把另一个区的滚动条同步到等价的位置，超酷！</p><h3 id="2-编辑工具栏"><a href="#2-编辑工具栏" class="headerlink" title="2. 编辑工具栏"></a>2. 编辑工具栏</h3><p>也许您还是一个 Markdown 语法的新手，在您完全熟悉它之前，我们在 <strong>编辑区</strong> 的顶部放置了一个如下图所示的工具栏，您可以使用鼠标在工具栏上调整格式，不过我们仍旧鼓励你使用键盘标记格式，提高书写的流畅度。</p><p><img src="https://www.zybuluo.com/static/img/toolbar-editor.png" alt="tool-editor"></p><h3 id="3-编辑模式"><a href="#3-编辑模式" class="headerlink" title="3. 编辑模式"></a>3. 编辑模式</h3><p>完全心无旁骛的方式编辑文字：点击 <strong>编辑工具栏</strong> 最右侧的拉伸按钮或者按下 <code>Ctrl + M</code>，将 Cmd Markdown 切换到独立的编辑模式，这是一个极度简洁的写作环境，所有可能会引起分心的元素都已经被挪除，超清爽！</p><h3 id="4-实时的云端文稿"><a href="#4-实时的云端文稿" class="headerlink" title="4. 实时的云端文稿"></a>4. 实时的云端文稿</h3><p>为了保障数据安全，Cmd Markdown 会将您每一次击键的内容保存至云端，同时在 <strong>编辑工具栏</strong> 的最右侧提示 <code>已保存</code> 的字样。无需担心浏览器崩溃，机器掉电或者地震，海啸——在编辑的过程中随时关闭浏览器或者机器，下一次回到 Cmd Markdown 的时候继续写作。</p><h3 id="5-离线模式"><a href="#5-离线模式" class="headerlink" title="5. 离线模式"></a>5. 离线模式</h3><p>在网络环境不稳定的情况下记录文字一样很安全！在您写作的时候，如果电脑突然失去网络连接，Cmd Markdown 会智能切换至离线模式，将您后续键入的文字保存在本地，直到网络恢复再将他们传送至云端，即使在网络恢复前关闭浏览器或者电脑，一样没有问题，等到下次开启 Cmd Markdown 的时候，她会提醒您将离线保存的文字传送至云端。简而言之，我们尽最大的努力保障您文字的安全。</p><h3 id="6-管理工具栏"><a href="#6-管理工具栏" class="headerlink" title="6. 管理工具栏"></a>6. 管理工具栏</h3><p>为了便于管理您的文稿，在 <strong>预览区</strong> 的顶部放置了如下所示的 <strong>管理工具栏</strong>：</p><p><img src="https://www.zybuluo.com/static/img/toolbar-manager.jpg" alt="tool-manager"></p><p>通过管理工具栏可以：</p><p><i class="icon-share"></i> 发布：将当前的文稿生成固定链接，在网络上发布，分享<br><i class="icon-file"></i> 新建：开始撰写一篇新的文稿<br><i class="icon-trash"></i> 删除：删除当前的文稿<br><i class="icon-cloud"></i> 导出：将当前的文稿转化为 Markdown 文本或者 Html 格式，并导出到本地<br><i class="icon-reorder"></i> 列表：所有新增和过往的文稿都可以在这里查看、操作<br><i class="icon-pencil"></i> 模式：切换 普通/Vim/Emacs 编辑模式</p><h3 id="7-阅读工具栏"><a href="#7-阅读工具栏" class="headerlink" title="7. 阅读工具栏"></a>7. 阅读工具栏</h3><p><img src="https://www.zybuluo.com/static/img/toolbar-reader.jpg" alt="tool-manager"></p><p>通过 <strong>预览区</strong> 右上角的 <strong>阅读工具栏</strong>，可以查看当前文稿的目录并增强阅读体验。</p><p>工具栏上的五个图标依次为：</p><p><i class="icon-list"></i> 目录：快速导航当前文稿的目录结构以跳转到感兴趣的段落<br><i class="icon-chevron-sign-left"></i> 视图：互换左边编辑区和右边预览区的位置<br><i class="icon-adjust"></i> 主题：内置了黑白两种模式的主题，试试 <strong>黑色主题</strong>，超炫！<br><i class="icon-desktop"></i> 阅读：心无旁骛的阅读模式提供超一流的阅读体验<br><i class="icon-fullscreen"></i> 全屏：简洁，简洁，再简洁，一个完全沉浸式的写作和阅读环境</p><h3 id="8-阅读模式"><a href="#8-阅读模式" class="headerlink" title="8. 阅读模式"></a>8. 阅读模式</h3><p>在 <strong>阅读工具栏</strong> 点击 <i class="icon-desktop"></i> 或者按下 <code>Ctrl+Alt+M</code> 随即进入独立的阅读模式界面，我们在版面渲染上的每一个细节：字体，字号，行间距，前背景色都倾注了大量的时间，努力提升阅读的体验和品质。</p><h3 id="9-标签、分类和搜索"><a href="#9-标签、分类和搜索" class="headerlink" title="9. 标签、分类和搜索"></a>9. 标签、分类和搜索</h3><p>在编辑区任意行首位置输入以下格式的文字可以标签当前文档：</p><p>标签： 未分类</p><p>标签以后的文稿在【文件列表】（Ctrl+Alt+F）里会按照标签分类，用户可以同时使用键盘或者鼠标浏览查看，或者在【文件列表】的搜索文本框内搜索标题关键字过滤文稿，如下图所示：</p><p><img src="https://www.zybuluo.com/static/img/file-list.png" alt="file-list"></p><h3 id="10-文稿发布和分享"><a href="#10-文稿发布和分享" class="headerlink" title="10. 文稿发布和分享"></a>10. 文稿发布和分享</h3><p>在您使用 Cmd Markdown 记录，创作，整理，阅读文稿的同时，我们不仅希望它是一个有力的工具，更希望您的思想和知识通过这个平台，连同优质的阅读体验，将他们分享给有相同志趣的人，进而鼓励更多的人来到这里记录分享他们的思想和知识，尝试点击 <i class="icon-share"></i> (Ctrl+Alt+P) 发布这份文档给好友吧！</p><hr><p>再一次感谢您花费时间阅读这份欢迎稿，点击 <i class="icon-file"></i> (Ctrl+Alt+N) 开始撰写新的文稿吧！祝您在这里记录、阅读、分享愉快！</p><p>作者 <a href="http://weibo.com/ghosert" target="_blank" rel="noopener">@ghosert</a><br>2016 年 07月 07日    </p><p>[^LaTeX]: 支持 <strong>LaTeX</strong> 编辑显示支持，例如：$\sum_{i=1}^n a_i=0$， 访问 <a href="http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference" target="_blank" rel="noopener">MathJax</a> 参考更多使用方法。</p><p>[^code]: 代码高亮功能支持包括 Java, Python, JavaScript 在内的，<strong>四十一</strong>种主流编程语言。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;比较全面的markdown预发备份，来自作业部落&lt;br&gt;我们理解您需要更便捷更高效的工具记录思想，整理笔记、知识，并将其中承载的价值传播给他人，&lt;strong&gt;Cmd Markdown&lt;/strong&gt; 是我们给出的答案 —— 我们为记录思想和分享知识提供更专业的工具。 您可以使用 Cmd Markdown：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;整理知识，学习笔记&lt;/li&gt;
+&lt;li&gt;发布日记，杂文，所见所想&lt;/li&gt;
+&lt;li&gt;撰写发布技术文稿（代码支持）&lt;/li&gt;
+&lt;li&gt;撰写发布学术论文（LaTeX 公式支持）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
